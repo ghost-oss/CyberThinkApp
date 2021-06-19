@@ -1,0 +1,62 @@
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/CyberThink.exe
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/CyberThink.pdb
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/Akavache.dll
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/Akavache.Core.dll
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/Akavache.Sqlite3.dll
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/Newtonsoft.Json.Bson.dll
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/Newtonsoft.Json.Bson.pdb
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/Splat.dll
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/SQLitePCLRaw.batteries_v2.dll
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/SQLitePCLRaw.core.dll
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/SQLitePCLRaw.lib.e_sqlite3.ios.dll
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/SQLitePCLRaw.provider.internal.dll
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/System.Reactive.dll
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/Xamarin.Essentials.dll
+/Users/System1/Projects/CyberThink/CyberThink/bin/iPhoneSimulator/Debug/Xamarin.Essentials.pdb
+/Users/System1/Projects/CyberThink/CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/ibtool/_BundleResourceWithLogicalName.items
+/Users/System1/Projects/CyberThink/CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/_PartialAppManifest.items
+/Users/System1/Projects/CyberThink/CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/_BundleResourceWithLogicalName.items
+/Users/System1/Projects/CyberThink/CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/coremlc/_PartialAppManifest.items
+/Users/System1/Projects/CyberThink/CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/coremlc/_BundleResourceWithLogicalName.items
+/Users/System1/Projects/CyberThink/CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/optimized/
+/Users/System1/Projects/CyberThink/CyberThink/obj/iPhoneSimulator/Debug/CyberThink.csproj.CoreCompileInputs.cache
+/Users/System1/Projects/CyberThink/CyberThink/obj/iPhoneSimulator/Debug/CyberThink.csproj.CopyComplete
+/Users/System1/Projects/CyberThink/CyberThink/obj/iPhoneSimulator/Debug/CyberThink.exe
+/Users/System1/Projects/CyberThink/CyberThink/obj/iPhoneSimulator/Debug/CyberThink.pdb
+/Users/System1/Projects/CyberThink/CyberThink/obj/iPhoneSimulator/Debug/CyberThink.csprojAssemblyReference.cache
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/CyberThink.exe
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/CyberThink.pdb
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/Akavache.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/Akavache.Core.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/Akavache.Sqlite3.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/CommonServiceLocator.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/GalaSoft.MvvmLight.Extras.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/GalaSoft.MvvmLight.Extras.pdb
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/GalaSoft.MvvmLight.Platform.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/GalaSoft.MvvmLight.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/GalaSoft.MvvmLight.pdb
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/Newtonsoft.Json.Bson.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/Newtonsoft.Json.Bson.pdb
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/Splat.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/SQLitePCLRaw.batteries_v2.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/SQLitePCLRaw.core.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/SQLitePCLRaw.lib.e_sqlite3.ios.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/SQLitePCLRaw.provider.internal.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/System.Reactive.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/Xamarin.Essentials.dll
+/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/Xamarin.Essentials.pdb
+/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/ibtool/_BundleResourceWithLogicalName.items
+/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/_PartialAppManifest.items
+/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/_BundleResourceWithLogicalName.items
+/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/coremlc/_PartialAppManifest.items
+/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/coremlc/_BundleResourceWithLogicalName.items
+/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/optimized/
+/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/CyberThink.csproj.CoreCompileInputs.cache
+/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/CyberThink.csproj.CopyComplete
+/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/CyberThink.exe
+/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/CyberThink.pdb
+/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/CyberThink.csprojAssemblyReference.cache
