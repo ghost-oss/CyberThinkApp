@@ -17,5 +17,6 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMvvmLight Condition=" '$(PkgMvvmLight)' == '' ">/Users/System1/.nuget/packages/mvvmlight/5.4.1.1</PkgMvvmLight>
+    <PkgMicrosoft_Bcl_Build Condition=" '$(PkgMicrosoft_Bcl_Build)' == '' ">/Users/System1/.nuget/packages/microsoft.bcl.build/1.0.14</PkgMicrosoft_Bcl_Build>
   </PropertyGroup>
 </Project>

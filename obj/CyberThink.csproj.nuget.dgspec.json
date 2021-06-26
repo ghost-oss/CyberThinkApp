@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/System1/Projects/CyberThink /CyberThink/CyberThink.csproj": {}
+    "/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/CyberThink.csproj": {}
   },
   "projects": {
-    "/Users/System1/Projects/CyberThink /CyberThink/CyberThink.csproj": {
+    "/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/CyberThink.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/System1/Projects/CyberThink /CyberThink/CyberThink.csproj",
+        "projectUniqueName": "/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/CyberThink.csproj",
         "projectName": "CyberThink",
-        "projectPath": "/Users/System1/Projects/CyberThink /CyberThink/CyberThink.csproj",
+        "projectPath": "/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/CyberThink.csproj",
         "packagesPath": "/Users/System1/.nuget/packages/",
-        "outputPath": "/Users/System1/Projects/CyberThink /CyberThink/obj/",
+        "outputPath": "/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -32,6 +32,10 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "FireSharp": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
             "MvvmLight": {
               "target": "Package",
               "version": "[5.4.1.1, )"
@@ -42,7 +46,7 @@
             },
             "akavache": {
               "target": "Package",
-              "version": "[7.2.1, )"
+              "version": "[7.3.1, )"
             }
           }
         }

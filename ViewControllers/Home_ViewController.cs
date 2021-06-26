@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using CyberThink.Helpers;
 using Akavache;
 using System.Reactive.Linq;
+using CyberThink.DatabaseConnection;
 
 namespace CyberThink
 {
@@ -36,6 +37,18 @@ namespace CyberThink
             this.innerViewForScroll.BackgroundColor = UIColor.FromRGB(36, 46, 71);
 
             home_ViewModel = new Home_ViewModel();
+
+            this.DatabaseTest();
+
+            
+        }
+
+
+        public void DatabaseTest()
+        {
+            FirebaseConnection fb = new FirebaseConnection();
+            fb.CreateConnection();
+            fb.InsertData();
         }
 
         public override void ViewWillAppear(bool animated)

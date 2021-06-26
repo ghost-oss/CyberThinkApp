@@ -1,5 +1,5 @@
-"--cache=/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache"
-"--sim=/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/CyberThink.app"
+"--cache=/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache"
+"--sim=/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/CyberThink.app"
 --executable=CyberThink
  --debug
  --sgen-conc
@@ -10,7 +10,7 @@
  --aot-options=-O=-float32
  --http-message-handler=NSUrlSessionHandler
  --abi=x86_64
-"--symbollist=/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-symbols.list"
+"--symbollist=/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-symbols.list"
  --dsym=no
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll
@@ -164,16 +164,21 @@
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XDocument.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XmlDocument.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll
--r=/Users/System1/.nuget/packages/akavache/7.2.1/lib/xamarinios10/Akavache.dll
--r=/Users/System1/.nuget/packages/akavache.core/7.2.1/lib/xamarinios10/Akavache.Core.dll
--r=/Users/System1/.nuget/packages/akavache.sqlite3/7.2.1/lib/xamarinios10/Akavache.Sqlite3.dll
+-r=/Users/System1/.nuget/packages/akavache/7.3.1/lib/xamarinios10/Akavache.dll
+-r=/Users/System1/.nuget/packages/akavache.core/7.3.1/lib/xamarinios10/Akavache.Core.dll
+-r=/Users/System1/.nuget/packages/akavache.sqlite3/7.3.1/lib/xamarinios10/Akavache.Sqlite3.dll
 -r=/Users/System1/.nuget/packages/commonservicelocator/2.0.2/lib/netstandard2.0/CommonServiceLocator.dll
+-r=/Users/System1/.nuget/packages/firesharp/2.0.4/lib/portable-net45+sl5+wp8+win8/FireSharp.dll
+-r=/Users/System1/.nuget/packages/microsoft.bcl.async/1.0.168/lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.Extensions.dll
+-r=/Users/System1/.nuget/packages/microsoft.bcl.async/1.0.168/lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.dll
+-r=/Users/System1/.nuget/packages/microsoft.net.http/2.2.28/lib/portable-net45+win8/System.Net.Http.Extensions.dll
+-r=/Users/System1/.nuget/packages/microsoft.net.http/2.2.28/lib/portable-net45+win8/System.Net.Http.Primitives.dll
 -r=/Users/System1/.nuget/packages/mvvmlightlibs/5.4.1.1/lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.dll
 -r=/Users/System1/.nuget/packages/mvvmlightlibs/5.4.1.1/lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll
 -r=/Users/System1/.nuget/packages/mvvmlightlibs/5.4.1.1/lib/xamarin.ios10/GalaSoft.MvvmLight.dll
--r=/Users/System1/.nuget/packages/newtonsoft.json/12.0.3/lib/netstandard2.0/Newtonsoft.Json.dll
+-r=/Users/System1/.nuget/packages/newtonsoft.json/13.0.1/lib/netstandard2.0/Newtonsoft.Json.dll
 -r=/Users/System1/.nuget/packages/newtonsoft.json.bson/1.0.2/lib/netstandard2.0/Newtonsoft.Json.Bson.dll
--r=/Users/System1/.nuget/packages/splat/10.0.1/lib/netstandard2.0/Splat.dll
+-r=/Users/System1/.nuget/packages/splat/11.1.1/lib/netstandard2.0/Splat.dll
 -r=/Users/System1/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.0.4/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll
 -r=/Users/System1/.nuget/packages/sqlitepclraw.core/2.0.4/lib/netstandard2.0/SQLitePCLRaw.core.dll
 -r=/Users/System1/.nuget/packages/sqlitepclraw.lib.e_sqlite3.ios/2.0.4/lib/xamarinios10/SQLitePCLRaw.lib.e_sqlite3.ios.dll
@@ -182,4 +187,4 @@
 -r=/Users/System1/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll
 -r=/Users/System1/.nuget/packages/xamarin.essentials/1.5.3.2/lib/xamarinios10/Xamarin.Essentials.dll
  --target-framework=Xamarin.iOS,v1.0
-"--root-assembly=/Users/System1/Projects/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/CyberThink.exe"
+"--root-assembly=/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/bin/iPhoneSimulator/Debug/CyberThink.exe"
