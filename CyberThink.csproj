@@ -126,6 +126,7 @@
         <Folder Include="Repository\" />
         <Folder Include="Assets.xcassets\.appiconset\" />
         <Folder Include="DatabaseConnection\" />
+        <Folder Include="Service\" />
     </ItemGroup>
     <ItemGroup>
         <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -212,6 +213,7 @@
           <DependentUpon>Note_Cell.cs</DependentUpon>
         </Compile>
         <Compile Include="DatabaseConnection\FirebaseConnection.cs" />
+        <Compile Include="Service\CacheService.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

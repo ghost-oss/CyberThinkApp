@@ -5,6 +5,7 @@ using CyberThink.Model;
 using CoreServices;
 using CyberThink.ViewModel;
 using CyberThink.Repository;
+using CyberThink.Service;
 using GalaSoft.MvvmLight.Messaging;
 
 namespace CyberThink.ViewModel
@@ -31,6 +32,8 @@ namespace CyberThink.ViewModel
             }
         }
 
+        private CacheService cacheService;
+
         public Module_ViewModel()
         {
             this.GenerateModules();
@@ -38,17 +41,14 @@ namespace CyberThink.ViewModel
 
         public void GenerateModules()
         {
-            _begginerModulesList = new List<Module>();
-            _begginerModulesList.Add(new Module() { moduleName = "Introduction to Security", moduleInformation = "Some information", isComplete = false });
-            _begginerModulesList.Add(new Module() { moduleName = "The needs of Security", moduleInformation = "Some information", isComplete = false });
-            _begginerModulesList.Add(new Module() { moduleName = "The impacts of Security", moduleInformation = "Some information", isComplete = false });
-            _begginerModulesList.Add(new Module() { moduleName = "Summary", moduleInformation = "Some information", isComplete = false });
+            cacheService = new CacheService();
 
+            _begginerModulesList = new List<Module>();
+            _begginerModulesList = cacheService.RetrieveModuleListFromCache("BeginnerModules");
+           
             _intermidiateModulesList = new List<Module>();
-            _intermidiateModulesList.Add(new Module() { moduleName = "ISO 2000", moduleInformation = "Some information" });
-            _intermidiateModulesList.Add(new Module() { moduleName = "Incident Response", moduleInformation = "Some information" });
-            _intermidiateModulesList.Add(new Module() { moduleName = "Malware analysis", moduleInformation = "Some information" });
-            _intermidiateModulesList.Add(new Module() { moduleName = "Penetration testing", moduleInformation = "Some information" });
+            _intermidiateModulesList = cacheService.RetrieveModuleListFromCache("IntermidateModules");
+            
         }
 
         public void MarkModuleAsComplete(string course, int moduleIndex)

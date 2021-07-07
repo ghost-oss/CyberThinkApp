@@ -172,7 +172,7 @@ namespace CyberThink
             }
             else
             {
-                Module module = moduleViewModel.beginnerModulesList[indexPath.Row];
+                Module module = moduleViewModel.intermidiateModulesList[indexPath.Row];
                 this.ModuleSelected(module);
             }
         }
