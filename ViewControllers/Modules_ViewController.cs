@@ -7,7 +7,7 @@ using CyberThink.Cells;
 using Foundation;
 using ObjCRuntime;
 using UIKit;
-using CoreAnimation;
+using System.Diagnostics;
 using CoreGraphics;
 
 namespace CyberThink
@@ -27,7 +27,8 @@ namespace CyberThink
             this.SetUpEventHadlers();
             this.SetUpTableViewsAndButtons();
             this.SetUpButtons();
-            this.GenerateViewModels();
+           // this.GenerateViewModels();
+
             //this.View.BackgroundColor = UIColor.FromRGB(01, 08, 36);
             //modulesBackgroundView.Layer.BackgroundColor = UIColor.FromRGB(01, 08, 36).CGColor;
 
@@ -36,9 +37,27 @@ namespace CyberThink
             modulesBackgroundView.Layer.BackgroundColor = UIColor.FromRGB(36, 46, 71).CGColor;
         }
 
+        public override void ViewDidAppear(bool animated)
+        {
+            base.ViewDidAppear(animated);
+            this.GenerateViewModels();
+        }
+
         public void GenerateViewModels()
         {
+            var timer = new Stopwatch();
+            timer.Start();
+
             moduleViewModel = new Module_ViewModel();
+
+
+
+            timer.Stop();
+            var time = timer.Elapsed.ToString();
+
+            
+
+
         }
 
         public override void ViewWillAppear(bool animated)

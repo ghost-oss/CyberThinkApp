@@ -38,18 +38,19 @@ namespace CyberThink
 
             home_ViewModel = new Home_ViewModel();
 
-            this.DatabaseTest();
+            //this.DatabaseTest();
 
             
         }
 
 
-        public void DatabaseTest()
-        {
-            FirebaseConnection fb = new FirebaseConnection();
-            fb.CreateConnection();
-            fb.InsertData();
-        }
+        //public void DatabaseTest()
+        //{
+        //    FirebaseConnection fb = new FirebaseConnection();
+        //    fb.CreateConnection();
+        //    var list = fb.RetrieveModue("IntermidateModule");
+           
+        //}
 
         public override void ViewWillAppear(bool animated)
         {

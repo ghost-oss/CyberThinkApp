@@ -5,6 +5,7 @@ using CyberThink.Model;
 using CoreServices;
 using CyberThink.ViewModel;
 using CyberThink.Repository;
+using System.Threading.Tasks;
 using CyberThink.Service;
 using GalaSoft.MvvmLight.Messaging;
 
@@ -45,10 +46,10 @@ namespace CyberThink.ViewModel
 
             _begginerModulesList = new List<Module>();
             _begginerModulesList = cacheService.RetrieveModuleListFromCache("BeginnerModules");
-           
+
             _intermidiateModulesList = new List<Module>();
             _intermidiateModulesList = cacheService.RetrieveModuleListFromCache("IntermidateModules");
-            
+
         }
 
         public void MarkModuleAsComplete(string course, int moduleIndex)

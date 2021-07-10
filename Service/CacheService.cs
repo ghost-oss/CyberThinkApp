@@ -3,6 +3,7 @@ using CyberThink.DatabaseConnection;
 using CyberThink.Model;
 using System.Collections.Generic;
 using Akavache;
+using System.Threading.Tasks;
 using System.Reactive.Linq;
 
 namespace CyberThink.Service
@@ -20,6 +21,8 @@ namespace CyberThink.Service
 
             if (list == null)
             {
+
+
                 FirebaseConnection fbClient = new FirebaseConnection();
                 fbClient.CreateConnection();
                 list = fbClient.RetrieveModule(moduleType);
@@ -33,26 +36,14 @@ namespace CyberThink.Service
         public void InsertModuleListForCache(List<Module> moduleList, string moduleType)
         {
             BlobCache.LocalMachine.InsertObject(moduleType,moduleList);
+
+         
         }
 
         public void UpdateModuleStatus()
         {
-
+           
         }
     }
-
-    //public async void test()
-    //{
-
-    //    await BlobCache.UserAccount.InsertObject("modules", home_ViewModel.beginnerModules);
-    //    // Or without async/await:
-    //    //myRevisionNotes = await BlobCache.UserAccount.GetObject<revisionNotes>("revisionNotes").Catch(Observable.Return(new revisionNotes()));
-
-
-     
-
-
-
-    //}
 
 }

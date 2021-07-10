@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using FireSharp.Config;
 using FireSharp.Response;
 using FireSharp.Interfaces;
+using System.Threading.Tasks;
 
 namespace CyberThink.DatabaseConnection
 {
@@ -45,24 +46,49 @@ namespace CyberThink.DatabaseConnection
             }
         }
 
-        public void InsertData()
+        public List<Module> RetrieveModule (string moduleType)
         {
-            Module module1 = new Module()
+            List<Module> moduleList = new List<Module>();
+
+            try
             {
-                moduleName = "introduction",
-                moduleInformation = "This is an introductory module",
-                isComplete = false,
-                moduleId = 1
-            };
+                var response = firebaseClient.Get("ModulesList/" + moduleType);
 
-            firebaseClient.Set("ModuleList/" + module1.moduleId, module1);
-
-            //public List<Module> SelectModule(string moduleType)
-            //{
+                moduleList = response.ResultAs<List<Module>>();
 
 
-            //}
+                //Add precaution such that checks if list is null and ensure all modules have valid information else remove from list (or display message)
+                //Require error handler if there is no internet connection
+
+                //if (moduleList != null)
+                //{
+
+                //}
+                //else
+                //{
+                //    foreach (module)
+                //    {
+
+                //    }
+                //}
+
+
+
+            }
+            catch (Exception ex)
+            {
+                var error = ex.GetType();
+                var message = ex.Message;
+
+            }
+
+
+
+            return moduleList;
         }
     }
 
 }
+
+
+//var module = firebaseClient.Get("ModulesList/BeginnerModules/Introduction CS").ResultAs<Module>();
