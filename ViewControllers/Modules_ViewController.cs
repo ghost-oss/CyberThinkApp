@@ -27,7 +27,7 @@ namespace CyberThink
             this.SetUpEventHadlers();
             this.SetUpTableViewsAndButtons();
             this.SetUpButtons();
-            this.GenerateViewModels();
+            //this.GenerateViewModels();
 
             //this.View.BackgroundColor = UIColor.FromRGB(01, 08, 36);
             //modulesBackgroundView.Layer.BackgroundColor = UIColor.FromRGB(01, 08, 36).CGColor;
@@ -40,7 +40,7 @@ namespace CyberThink
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
-            //this.GenerateViewModels();
+            this.GenerateViewModels();
         }
 
         public void GenerateViewModels()
