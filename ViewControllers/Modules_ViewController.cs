@@ -149,6 +149,11 @@ namespace CyberThink
 
                     Module module = moduleViewModel.beginnerModulesList[indexPath.Row];
                     cell.BindDataToCell(module.moduleName);
+
+                    if (module.isComplete == true)
+                    {
+                        cell.MarkModuleAsComplete();
+                    }
                 }
             }
             else
@@ -161,6 +166,11 @@ namespace CyberThink
 
                     Module module = moduleViewModel.intermidiateModulesList[indexPath.Row];
                     cell.BindDataToCell(module.moduleName);
+
+                    if (module.isComplete == true)
+                    {
+                        cell.MarkModuleAsComplete();
+                    }
                 }
             }
 

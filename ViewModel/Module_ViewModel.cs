@@ -37,18 +37,18 @@ namespace CyberThink.ViewModel
 
         public Module_ViewModel()
         {
-            this.GenerateModules();
+            this.GenerateModules().ConfigureAwait(false);
         }
 
-        public void GenerateModules()
+        public async Task GenerateModules()
         {
             cacheService = new CacheService();
 
             _begginerModulesList = new List<Module>();
-            _begginerModulesList = cacheService.RetrieveModuleListFromCache("BeginnerModules");
+            _begginerModulesList = await cacheService.RetrieveModuleListFromCache("BeginnerModules");
 
             _intermidiateModulesList = new List<Module>();
-            _intermidiateModulesList = cacheService.RetrieveModuleListFromCache("IntermidateModules");
+            _intermidiateModulesList = await cacheService.RetrieveModuleListFromCache("IntermidateModules");
 
         }
 
@@ -57,13 +57,18 @@ namespace CyberThink.ViewModel
             if (course == "beginnerTableView")
             {
                 _begginerModulesList[moduleIndex].isComplete = true;
-                Messenger.Default.Send<List<Module>>(message: _begginerModulesList, token: "beginnerModulesToken");
+
+                cacheService.InsertModuleListForCache(_begginerModulesList, "BeginnerModules");
+
+                // Messenger.Default.Send<List<Module>>(message: _begginerModulesList, token: "beginnerModulesToken");
                 //Sends a message to the subscribers (if any) whom have registered with the same generic type and token
             }
             else
             {
                 _intermidiateModulesList[moduleIndex].isComplete = true;
-                Messenger.Default.Send<List<Module>>(message: _intermidiateModulesList, token: "intermidiaryModulesToken");
+                cacheService.InsertModuleListForCache(_intermidiateModulesList, "IntermidateModules");
+
+                //Messenger.Default.Send<List<Module>>(message: _intermidiateModulesList, token: "intermidiaryModulesToken");
                 //Sends a message to the subscribers (if any) whom have registered with the same generic type and token
 
             }

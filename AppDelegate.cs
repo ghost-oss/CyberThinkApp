@@ -20,7 +20,9 @@ namespace CyberThink
         {
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
-           
+
+            Akavache.Registrations.Start("CyberThinkCache");
+
             return true;
         }
 
@@ -40,6 +42,13 @@ namespace CyberThink
             // Called when the user discards a scene session.
             // If any sessions were discarded while the application was not running, this will be called shortly after `FinishedLaunching`.
             // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+        }
+
+        [Export("applicationWillTerminate:")]
+        public void WillTerminate(UIApplication application)
+        {
+            Akavache.BlobCache.Shutdown();
+            throw new System.NotImplementedException();
         }
     }
 }

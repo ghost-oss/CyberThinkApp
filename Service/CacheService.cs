@@ -14,36 +14,49 @@ namespace CyberThink.Service
         {
         }
 
-        public List<Module> RetrieveModuleListFromCache(string moduleType)
+        #region ModuleList Cache Methods
+
+        public async Task<List<Module>> RetrieveModuleListFromCache(string moduleType)
         {
 
-            List<Module> list = BlobCache.UserAccount.GetObject<List<Module>>(moduleType) as List<Module>;
+            List<Module> list = new List<Module>();
 
-            if (list == null)
+            try 
             {
 
+                list = await BlobCache.LocalMachine.GetObject<List<Module>>(moduleType);
 
+                if (list == null || list.Count == 0)
+                {
+                    FirebaseConnection fbClient = new FirebaseConnection();
+                    fbClient.CreateConnection();
+                    list = fbClient.RetrieveModule(moduleType);
+                    this.InsertModuleListForCache(list, moduleType);
+                }
+
+            }
+            catch 
+            {
                 FirebaseConnection fbClient = new FirebaseConnection();
                 fbClient.CreateConnection();
                 list = fbClient.RetrieveModule(moduleType);
                 this.InsertModuleListForCache(list, moduleType);
-
             }
-
-            return list;
+       
+            return list; 
         }
+
 
         public void InsertModuleListForCache(List<Module> moduleList, string moduleType)
         {
+
+            BlobCache.LocalMachine.InvalidateObject<List<Module>>(moduleType);
+
             BlobCache.LocalMachine.InsertObject(moduleType,moduleList);
 
-         
         }
 
-        public void UpdateModuleStatus()
-        {
-           
-        }
+        #endregion
     }
 
 }
