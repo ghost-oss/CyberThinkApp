@@ -38,25 +38,21 @@ namespace CyberThink
 
             home_ViewModel = new Home_ViewModel();
 
-            //this.DatabaseTest();
-
-            
         }
 
+        public override void ViewDidAppear(bool animated)
+        {
+            base.ViewDidAppear(animated);
 
-        //public void DatabaseTest()
-        //{
-        //    FirebaseConnection fb = new FirebaseConnection();
-        //    fb.CreateConnection();
-        //    var list = fb.RetrieveModue("IntermidateModule");
-           
-        //}
+            home_ViewModel.RetrieveUpdatedModules();
+            this.InitiateProgressBars();
+        }
 
         public override void ViewWillAppear(bool animated)
         {
             base.ViewWillAppear(animated);
             this.SetUpButtonUI();
-            this.InitiateProgressBars();
+
         }
 
         public void SetNavBarTransparency()
@@ -111,6 +107,7 @@ namespace CyberThink
 
         public void InitiateProgressBars()
         {
+
             float beginnerProgressValue = home_ViewModel.ReturnModuleTotalCompletionValue(home_ViewModel.beginnerModules) / 100; //We divide by 100 again as progress bar has a range of [0-1]
             beginnerProgressView.Layer.CornerRadius = 3;
             beginnerProgressView.ProgressTintColor = UIColor.Yellow;

@@ -1,8 +1,10 @@
 ﻿using System;
+using CyberThink.Service;
 using GalaSoft.MvvmLight;
 using CyberThink.Model;
 using System.Collections.Generic;
 using GalaSoft.MvvmLight.Messaging;
+using System.Threading.Tasks;
 
 namespace CyberThink.ViewModel
 {
@@ -11,31 +13,33 @@ namespace CyberThink.ViewModel
 
         public List<Module> beginnerModules;
         public List<Module> intermidiaryModules;
+        public CacheService cacheService;
+
 
         public Home_ViewModel()
         {
             beginnerModules = new List<Module>();
             intermidiaryModules = new List<Module>();
-            this.RegisterMessages();      
+            cacheService = new CacheService();
+
+
         }
 
-        public void RegisterMessages()
+        public void RetrieveUpdatedModules()
         {
-             //Subscribing the type of message we want to listen and recieve from the publisher
-             //The message we're subscribing to will be of type List<Modules> and we have applied a distinctive token for the two messages.
-             Messenger.Default.Register<List<Module>>(recipient: this, token: "beginnerModulesToken", UpdateBeginnerModuleList);
-             Messenger.Default.Register<List<Module>>(recipient: this, token: "intermidiaryModulesToken", UpdateIntermidiaryModuleList); 
+            //Runs an async task and halts main thread until operation is complete. This prevents loading of progress bar before getting completion results
+            Task.Run(() => RetrieveModules()).GetAwaiter().GetResult();
         }
 
-
-        public void UpdateBeginnerModuleList(List<Module> list)
+        public async Task RetrieveModules()
         {
-            beginnerModules = list;
-        }
 
-        public void UpdateIntermidiaryModuleList(List<Module> list)
-        {
-            intermidiaryModules = list;
+            beginnerModules = await cacheService.RetrieveModuleListFromCache("BeginnerModules");
+            //beginnerModules = cacheService.RetrieveModulesNonAsync("BeginnerModules");
+
+            intermidiaryModules = await cacheService.RetrieveModuleListFromCache("IntermidateModules");
+            //intermidiaryModules = cacheService.RetrieveModulesNonAsync("IntermidateModules");
+
         }
 
 
@@ -63,5 +67,20 @@ namespace CyberThink.ViewModel
 
         }
 
+
     }
 }
+
+
+/*
+       
+
+         public void RegisterMessages()
+        {
+             //Subscribing the type of message we want to listen and recieve from the publisher
+             //The message we're subscribing to will be of type List<Modules> and we have applied a distinctive token for the two messages.
+             Messenger.Default.Register<List<Module>>(recipient: this, token: "beginnerModulesToken", UpdateBeginnerModuleList);
+             Messenger.Default.Register<List<Module>>(recipient: this, token: "intermidiaryModulesToken", UpdateIntermidiaryModuleList); 
+        }
+
+ */

@@ -55,8 +55,15 @@ namespace CyberThink.Service
             BlobCache.LocalMachine.InsertObject(moduleType,moduleList);
 
         }
-
+  
         #endregion
+
+
+        public void ClearCache()
+        {
+
+        }
+
     }
 
 }
