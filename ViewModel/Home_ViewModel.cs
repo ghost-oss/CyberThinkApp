@@ -15,14 +15,11 @@ namespace CyberThink.ViewModel
         public List<Module> intermidiaryModules;
         public CacheService cacheService;
 
-
         public Home_ViewModel()
         {
             beginnerModules = new List<Module>();
             intermidiaryModules = new List<Module>();
             cacheService = new CacheService();
-
-
         }
 
         public void RetrieveUpdatedModules()
@@ -33,13 +30,9 @@ namespace CyberThink.ViewModel
 
         public async Task RetrieveModules()
         {
-
             beginnerModules = await cacheService.RetrieveModuleListFromCache("BeginnerModules");
-            //beginnerModules = cacheService.RetrieveModulesNonAsync("BeginnerModules");
 
             intermidiaryModules = await cacheService.RetrieveModuleListFromCache("IntermidateModules");
-            //intermidiaryModules = cacheService.RetrieveModulesNonAsync("IntermidateModules");
-
         }
 
 

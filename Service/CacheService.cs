@@ -55,10 +55,52 @@ namespace CyberThink.Service
             BlobCache.LocalMachine.InsertObject(moduleType,moduleList);
 
         }
-  
+
+        #endregion
+
+        #region NotesList Cache Methods
+
+        public void InsertNotesListForCache(string notesKey, List<Note> notesList)
+        {
+            BlobCache.LocalMachine.InvalidateObject<List<Note>>(notesKey);
+
+            BlobCache.LocalMachine.InsertObject(notesKey,notesList);
+        }
+
+        public async Task<List<Note>> RetrieveNotesListFromCache(string notesKey)
+        {
+            List<Note> notes = new List<Note>();
+
+            try
+            {
+                notes = await BlobCache.LocalMachine.GetObject<List<Note>>(notesKey);
+
+                if (notes == null)
+                {
+                    return notes;
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return notes;
+        }
+
+        public void RemoveNoteFromCache()
+        {
+
+        }
+
+
+
+
         #endregion
 
 
+        //This will be generic type to which can clear cache of any kind
         public void ClearCache()
         {
 

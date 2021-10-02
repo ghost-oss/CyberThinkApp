@@ -1,6 +1,7 @@
 ﻿using System;
 using CyberThink.Model;
 using GalaSoft.MvvmLight.Messaging;
+using CyberThink.Service;
 using CyberThink.ViewModel;
 
 namespace CyberThink.ViewModel
