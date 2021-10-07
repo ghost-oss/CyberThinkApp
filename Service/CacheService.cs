@@ -26,9 +26,10 @@ namespace CyberThink.Service
 
                 list = await BlobCache.LocalMachine.GetObject<List<Module>>(moduleType);
 
-                if (list == null || list.Count == 0)
+                if (list == null || list.Count == 0) 
                 {
                     FirebaseConnection fbClient = new FirebaseConnection();
+
                     fbClient.CreateConnection();
                     list = fbClient.RetrieveModule(moduleType);
                     this.InsertModuleListForCache(list, moduleType);
@@ -38,6 +39,7 @@ namespace CyberThink.Service
             catch 
             {
                 FirebaseConnection fbClient = new FirebaseConnection();
+
                 fbClient.CreateConnection();
                 list = fbClient.RetrieveModule(moduleType);
                 this.InsertModuleListForCache(list, moduleType);
@@ -91,7 +93,7 @@ namespace CyberThink.Service
 
         public void RemoveNoteFromCache()
         {
-
+            BlobCache.LocalMachine.InvalidateAll();
         }
 
 

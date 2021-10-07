@@ -31,8 +31,9 @@ namespace CyberThink
 
         public override void ViewWillAppear(bool animated)
         {
-            this.ToggleEmptyNotesView();            
-            this.notesTableView.ReloadData();
+            this.ToggleEmptyNotesView();
+            var value = noteListViewModel.noteList.Count;
+            notesTableView.ReloadData();
             this.notesTableView.TableFooterView = new UIView();
         }
 
@@ -94,18 +95,35 @@ namespace CyberThink
         {
             Note_Cell cell = tableView.DequeueReusableCell(Note_Cell.Key) as Note_Cell;
 
-            if (cell == null)
-            {
+            if (cell == null) {
+
                 cell = new Note_Cell();
                 var views = NSBundle.MainBundle.LoadNib(Note_Cell.Key, cell, null);
-                cell = Runtime.GetNSObject(views.ValueAt(0)) as Note_Cell;
-
-                var note = noteListViewModel.noteList[indexPath.Row];
-                cell.BindData(note.noteTitle, note.note);
-
+                cell = Runtime.GetNSObject(views.ValueAt(0)) as Note_Cell;      
             }
 
+            //Kept this outside as solves the issue of deleting a note then adding a new note
+            var note = noteListViewModel.noteList[indexPath.Row];
+            cell.BindData(note.noteTitle, note.note);
+
             return cell;
+        }
+
+        [Export("tableView:editActionsForRowAtIndexPath:")]
+        public UITableViewRowAction[] EditActionsForRow(UITableView tableView, NSIndexPath indexPath)
+        {
+            var deleteModule = UITableViewRowAction.Create(UITableViewRowActionStyle.Destructive, "DeleteRow",
+                (args1, index) =>
+                {
+                    noteListViewModel.noteList.RemoveAt(index.Row);              
+                    noteListViewModel.InsertUpdatedNotesListForCache(); //Updates cache of the new changes
+
+                    NSIndexPath[] path = { indexPath }; //Nice animation to delete the row
+                    tableView.DeleteRows(path, UITableViewRowAnimation.Fade);
+
+                });
+            
+            return new UITableViewRowAction[] { deleteModule };
         }
     }
 }
