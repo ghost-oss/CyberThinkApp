@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9Y-8m-i1x">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="frame" x="8" y="0.0" width="304" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,10 +27,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="c9Y-8m-i1x" secondAttribute="trailing" constant="8" id="8Er-OS-56u"/>
                             <constraint firstAttribute="bottom" secondItem="c9Y-8m-i1x" secondAttribute="bottom" id="aYh-Dm-LoS"/>
-                            <constraint firstAttribute="trailing" secondItem="c9Y-8m-i1x" secondAttribute="trailing" id="ayb-cO-hPy"/>
-                            <constraint firstItem="c9Y-8m-i1x" firstAttribute="leading" secondItem="5kI-ED-mDX" secondAttribute="leading" id="iM7-HA-uHV"/>
                             <constraint firstItem="c9Y-8m-i1x" firstAttribute="top" secondItem="5kI-ED-mDX" secondAttribute="top" id="xhu-8s-Eu9"/>
+                            <constraint firstItem="c9Y-8m-i1x" firstAttribute="leading" secondItem="5kI-ED-mDX" secondAttribute="leading" constant="8" id="ytb-xf-D6W"/>
                         </constraints>
                     </view>
                 </subviews>

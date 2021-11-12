@@ -31,7 +31,7 @@
                                                         <rect key="frame" x="8" y="8" width="358" height="2"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dh3-Q5-aHh">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dh3-Q5-aHh">
                                                         <rect key="frame" x="8" y="18" width="358" height="43"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="358" id="4qM-xc-tIt"/>
@@ -88,6 +88,8 @@
                                                     <constraint firstItem="hem-au-oac" firstAttribute="leading" secondItem="6Sb-TD-Omx" secondAttribute="leading" constant="8" id="eLR-rB-cDX"/>
                                                     <constraint firstItem="vbp-ZO-1yU" firstAttribute="top" secondItem="l5j-hC-8Kh" secondAttribute="bottom" constant="47" id="gcb-P5-4NA"/>
                                                     <constraint firstAttribute="trailing" secondItem="r7M-Ge-K8A" secondAttribute="trailing" constant="8" id="gnt-Am-xht"/>
+                                                    <constraint firstItem="Dh3-Q5-aHh" firstAttribute="leading" secondItem="6Sb-TD-Omx" secondAttribute="leading" constant="8" id="u2d-vE-Gw9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Dh3-Q5-aHh" secondAttribute="trailing" constant="8" id="yQM-Ke-qBi"/>
                                                     <constraint firstItem="kaS-Eu-xMq" firstAttribute="top" secondItem="r7M-Ge-K8A" secondAttribute="bottom" constant="42" id="zH1-BJ-rgG"/>
                                                 </constraints>
                                             </view>
@@ -459,7 +461,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="820"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xny-ZC-Nph">
-                                                <rect key="frame" x="28" y="192" width="358" height="514"/>
+                                                <rect key="frame" x="28" y="83" width="358" height="514"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcV-mG-Au7">
                                                         <rect key="frame" x="8" y="36" width="235" height="43"/>
@@ -526,11 +528,11 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="xny-ZC-Nph" secondAttribute="trailing" constant="28" id="9Hv-51-Wmi"/>
-                                            <constraint firstItem="xny-ZC-Nph" firstAttribute="top" secondItem="PJb-eU-HJ3" secondAttribute="top" constant="192" id="B84-tl-Cfg"/>
-                                            <constraint firstItem="xny-ZC-Nph" firstAttribute="leading" secondItem="PJb-eU-HJ3" secondAttribute="leading" constant="28" id="I7l-sz-7f6"/>
+                                            <constraint firstItem="xny-ZC-Nph" firstAttribute="top" secondItem="PJb-eU-HJ3" secondAttribute="top" constant="83" id="G40-fM-8kq"/>
+                                            <constraint firstAttribute="trailing" secondItem="xny-ZC-Nph" secondAttribute="trailing" constant="28" id="JUD-AU-G9j"/>
+                                            <constraint firstAttribute="bottom" secondItem="xny-ZC-Nph" secondAttribute="bottom" constant="223" id="Jqk-Lk-oEf"/>
+                                            <constraint firstItem="xny-ZC-Nph" firstAttribute="leading" secondItem="PJb-eU-HJ3" secondAttribute="leading" constant="28" id="f20-4w-bZq"/>
                                             <constraint firstAttribute="height" constant="820" id="w3v-9x-4SV"/>
-                                            <constraint firstAttribute="bottom" secondItem="xny-ZC-Nph" secondAttribute="bottom" constant="114" id="yZ1-l2-p3j"/>
                                         </constraints>
                                     </view>
                                 </subviews>
