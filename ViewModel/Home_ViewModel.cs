@@ -11,14 +11,16 @@ namespace CyberThink.ViewModel
     public class Home_ViewModel 
     {
 
-        public List<Module> beginnerModules;
-        public List<Module> intermidiaryModules;
+        public List<Module> phishingModules;
+        public List<Module> passwordModules;
+        public List<Module> physicalModules;
         public CacheService cacheService;
 
         public Home_ViewModel()
         {
-            beginnerModules = new List<Module>();
-            intermidiaryModules = new List<Module>();
+            phishingModules = new List<Module>();
+            passwordModules = new List<Module>();
+            physicalModules = new List<Module>();
             cacheService = new CacheService();
         }
 
@@ -30,9 +32,11 @@ namespace CyberThink.ViewModel
 
         public async Task RetrieveModules()
         {
-            beginnerModules = await cacheService.RetrieveModuleListFromCache("BeginnerModules");
+            phishingModules = await cacheService.RetrieveModuleListFromCache("PhishingModules");
 
-            intermidiaryModules = await cacheService.RetrieveModuleListFromCache("IntermidateModules");
+            passwordModules = await cacheService.RetrieveModuleListFromCache("PasswordModules");
+
+            physicalModules = await cacheService.RetrieveModuleListFromCache("PhysicalModules");
         }
 
 

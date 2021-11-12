@@ -9,34 +9,44 @@ namespace CyberThink.Repository
 {
     public class ModuleRepository
     {
-        private List<Module> begginerModulesList;
-        private List<Module> intermidiateModulesList;
+        private List<Module> phishingModulesList;
+        private List<Module> passwordeModulesList;
+        private List<Module> physicalModulesList;
 
 
         public void GenerateModules()
         {
-            begginerModulesList = new List<Module>();
-            begginerModulesList.Add(new Module() { moduleName = "Introduction to Security", moduleInformation = "Some information", isComplete = false });
-            begginerModulesList.Add(new Module() { moduleName = "The needs of Security", moduleInformation = "Some information", isComplete = false });
-            begginerModulesList.Add(new Module() { moduleName = "The impacts of Security", moduleInformation = "Some information", isComplete = false });
-            begginerModulesList.Add(new Module() { moduleName = "Summary", moduleInformation = "Some information", isComplete = false });
+            phishingModulesList = new List<Module>();
+            phishingModulesList.Add(new Module() { moduleName = "Topic 1", moduleInformation = "Some information", isComplete = false });
+            phishingModulesList.Add(new Module() { moduleName = "Topic 2", moduleInformation = "Some information", isComplete = false });
+            phishingModulesList.Add(new Module() { moduleName = "Topic 3", moduleInformation = "Some information", isComplete = false });
 
-            intermidiateModulesList = new List<Module>();
-            intermidiateModulesList.Add(new Module() { moduleName = "ISO 2000", moduleInformation = "Some information" });
-            intermidiateModulesList.Add(new Module() { moduleName = "Incident Response", moduleInformation = "Some information" });
-            intermidiateModulesList.Add(new Module() { moduleName = "Malware analysis", moduleInformation = "Some information" });
-            intermidiateModulesList.Add(new Module() { moduleName = "Penetration testing", moduleInformation = "Some information" });
+            passwordeModulesList = new List<Module>();
+            passwordeModulesList.Add(new Module() { moduleName = "Topic 1", moduleInformation = "Some information", isComplete = false });
+            passwordeModulesList.Add(new Module() { moduleName = "Topic 2", moduleInformation = "Some information", isComplete = false });
+            passwordeModulesList.Add(new Module() { moduleName = "Topic 3", moduleInformation = "Some information", isComplete = false });
+
+            physicalModulesList = new List<Module>();
+            physicalModulesList.Add(new Module() { moduleName = "Topic 1", moduleInformation = "Some information", isComplete = false });
+            physicalModulesList.Add(new Module() { moduleName = "Topic 2", moduleInformation = "Some information", isComplete = false });
+            physicalModulesList.Add(new Module() { moduleName = "Topic 3", moduleInformation = "Some information", isComplete = false });
         }
 
 
-        public void MarkBeginnerModuleAsComplete(int moduleIndex)
+        public List<Module> RetrieveModuleList(string moduleType)
         {
-            begginerModulesList[moduleIndex].isComplete = true;
-        }
-
-        public void MarkIntermidiateModuleAsComplete(int ModuleIndex)
-        {
-
+            if (moduleType == "PhishingModules")
+            {
+                return phishingModulesList;
+            }
+            else if (moduleType == "PasswordModules")
+            {
+                return passwordeModulesList;
+            }
+            else
+            {
+                return physicalModulesList;
+            }
         }
     }
 }

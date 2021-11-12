@@ -38,6 +38,7 @@ namespace CyberThink
 
             home_ViewModel = new Home_ViewModel();
 
+
         }
 
         public override void ViewDidAppear(bool animated)
@@ -101,18 +102,36 @@ namespace CyberThink
 
         private void SetUpTitlesUI()
         {
-            beginnerProgressTitle.Text = "Beginner Modules Progess";
-            UserInterface.LabelDesigner(beginnerProgressTitle,18);
+            phishingProgressTitle.Text = "Phishing Modules Progess";
+            UserInterface.LabelDesigner(phishingProgressTitle, 18);
+
+            passwordProgressTitle.Text = "Password Modules Progess";
+            UserInterface.LabelDesigner(passwordProgressTitle, 18);
+
+            physicalProgressTitle.Text = "Physical Modules Progess";
+            UserInterface.LabelDesigner(physicalProgressTitle, 18);
         }
 
         public void InitiateProgressBars()
         {
 
-            float beginnerProgressValue = home_ViewModel.ReturnModuleTotalCompletionValue(home_ViewModel.beginnerModules) / 100; //We divide by 100 again as progress bar has a range of [0-1]
-            beginnerProgressView.Layer.CornerRadius = 3;
-            beginnerProgressView.ProgressTintColor = UIColor.Yellow;
-            beginnerProgressView.BackgroundColor = UIColor.White;
-            beginnerProgressView.SetProgress(beginnerProgressValue, true);
+            float phishingProgressValue = home_ViewModel.ReturnModuleTotalCompletionValue(home_ViewModel.phishingModules) / 100; //We divide by 100 again as progress bar has a range of [0-1]
+            phishingProgressView.Layer.CornerRadius = 3;
+            phishingProgressView.ProgressTintColor = UIColor.Yellow;
+            phishingProgressView.BackgroundColor = UIColor.White;
+            phishingProgressView.SetProgress(phishingProgressValue, true);
+
+            float passwordProgressValue = home_ViewModel.ReturnModuleTotalCompletionValue(home_ViewModel.passwordModules) / 100; //We divide by 100 again as progress bar has a range of [0-1]
+            passwordProgressView.Layer.CornerRadius = 3;
+            passwordProgressView.ProgressTintColor = UIColor.Yellow;
+            passwordProgressView.BackgroundColor = UIColor.White;
+            passwordProgressView.SetProgress(passwordProgressValue, true);
+
+            float physicalProgressValue = home_ViewModel.ReturnModuleTotalCompletionValue(home_ViewModel.physicalModules) / 100; //We divide by 100 again as progress bar has a range of [0-1]
+            physicalProgressView.Layer.CornerRadius = 3;
+            physicalProgressView.ProgressTintColor = UIColor.Yellow;
+            physicalProgressView.BackgroundColor = UIColor.White;
+            physicalProgressView.SetProgress(physicalProgressValue, true);
 
         }
 

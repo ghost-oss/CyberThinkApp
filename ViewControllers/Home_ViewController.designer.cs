@@ -13,12 +13,6 @@ namespace CyberThink
 	partial class Home_ViewController
 	{
 		[Outlet]
-		UIKit.UILabel beginnerProgressTitle { get; set; }
-
-		[Outlet]
-		UIKit.UIProgressView beginnerProgressView { get; set; }
-
-		[Outlet]
 		UIKit.UIView ButtonsBackground { get; set; }
 
 		[Outlet]
@@ -35,6 +29,24 @@ namespace CyberThink
 
 		[Outlet]
 		UIKit.UIView ModuleCompletionBackground { get; set; }
+
+		[Outlet]
+		UIKit.UILabel passwordProgressTitle { get; set; }
+
+		[Outlet]
+		UIKit.UIProgressView passwordProgressView { get; set; }
+
+		[Outlet]
+		UIKit.UILabel phishingProgressTitle { get; set; }
+
+		[Outlet]
+		UIKit.UIProgressView phishingProgressView { get; set; }
+
+		[Outlet]
+		UIKit.UILabel physicalProgressTitle { get; set; }
+
+		[Outlet]
+		UIKit.UIProgressView physicalProgressView { get; set; }
 
 		[Outlet]
 		UIKit.UIView progressContainerView { get; set; }
@@ -56,16 +68,6 @@ namespace CyberThink
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (beginnerProgressTitle != null) {
-				beginnerProgressTitle.Dispose ();
-				beginnerProgressTitle = null;
-			}
-
-			if (beginnerProgressView != null) {
-				beginnerProgressView.Dispose ();
-				beginnerProgressView = null;
-			}
-
 			if (ButtonsBackground != null) {
 				ButtonsBackground.Dispose ();
 				ButtonsBackground = null;
@@ -81,9 +83,44 @@ namespace CyberThink
 				cyberThinksLogo = null;
 			}
 
+			if (passwordProgressTitle != null) {
+				passwordProgressTitle.Dispose ();
+				passwordProgressTitle = null;
+			}
+
+			if (passwordProgressView != null) {
+				passwordProgressView.Dispose ();
+				passwordProgressView = null;
+			}
+
+			if (phishingProgressTitle != null) {
+				phishingProgressTitle.Dispose ();
+				phishingProgressTitle = null;
+			}
+
+			if (phishingProgressView != null) {
+				phishingProgressView.Dispose ();
+				phishingProgressView = null;
+			}
+
+			if (physicalProgressTitle != null) {
+				physicalProgressTitle.Dispose ();
+				physicalProgressTitle = null;
+			}
+
+			if (physicalProgressView != null) {
+				physicalProgressView.Dispose ();
+				physicalProgressView = null;
+			}
+
 			if (homePageBackground != null) {
 				homePageBackground.Dispose ();
 				homePageBackground = null;
+			}
+
+			if (innerViewForScroll != null) {
+				innerViewForScroll.Dispose ();
+				innerViewForScroll = null;
 			}
 
 			if (ModuleCompletionBackground != null) {
@@ -119,11 +156,6 @@ namespace CyberThink
 			if (tableView != null) {
 				tableView.Dispose ();
 				tableView = null;
-			}
-
-			if (innerViewForScroll != null) {
-				innerViewForScroll.Dispose ();
-				innerViewForScroll = null;
 			}
 		}
 	}

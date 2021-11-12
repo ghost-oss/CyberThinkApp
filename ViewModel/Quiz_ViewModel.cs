@@ -17,27 +17,27 @@ namespace CyberThink.ViewModel
         public void GenerateQuestionAndAnswers()
         {
             var QuestionOneAnswers = new List<Answer>();
-            QuestionOneAnswers.Add(new Answer() { answer = "Sahil", correct = true });
-            QuestionOneAnswers.Add(new Answer() { answer = "Jack", correct = false });
-            QuestionOneAnswers.Add(new Answer() { answer = "Will", correct = false });
-            QuestionOneAnswers.Add(new Answer() { answer = "Tommy", correct = false });
+            QuestionOneAnswers.Add(new Answer() { answer = "Answer", correct = true });
+            QuestionOneAnswers.Add(new Answer() { answer = "Answer", correct = false });
+            QuestionOneAnswers.Add(new Answer() { answer = "Answer", correct = false });
+            QuestionOneAnswers.Add(new Answer() { answer = "Answer", correct = false });
 
             var QuestionTwoAnswers = new List<Answer>();
-            QuestionTwoAnswers.Add(new Answer() { answer = "19", correct = false });
-            QuestionTwoAnswers.Add(new Answer() { answer = "20", correct = false });
-            QuestionTwoAnswers.Add(new Answer() { answer = "30", correct = false });
-            QuestionTwoAnswers.Add(new Answer() { answer = "21", correct = true });
+            QuestionTwoAnswers.Add(new Answer() { answer = "Answer", correct = false });
+            QuestionTwoAnswers.Add(new Answer() { answer = "Answer", correct = false });
+            QuestionTwoAnswers.Add(new Answer() { answer = "Answer", correct = false });
+            QuestionTwoAnswers.Add(new Answer() { answer = "Answer", correct = true });
 
             var QuestionThreeAnswers = new List<Answer>();
-            QuestionThreeAnswers.Add(new Answer() { answer = "Developer", correct = true });
-            QuestionThreeAnswers.Add(new Answer() { answer = "Accountant", correct = false });
-            QuestionThreeAnswers.Add(new Answer() { answer = "Police Officer", correct = false });
-            QuestionThreeAnswers.Add(new Answer() { answer = "Taxman", correct = false });
+            QuestionThreeAnswers.Add(new Answer() { answer = "Answer", correct = true });
+            QuestionThreeAnswers.Add(new Answer() { answer = "Answer", correct = false });
+            QuestionThreeAnswers.Add(new Answer() { answer = "Answer", correct = false });
+            QuestionThreeAnswers.Add(new Answer() { answer = "Answer", correct = false });
 
 
-            questions.Add(new Question() { question = "What is my name ", answers = QuestionOneAnswers });
-            questions.Add(new Question() { question = "What is my age", answers = QuestionTwoAnswers });
-            questions.Add(new Question() { question = "What is my occupation", answers = QuestionThreeAnswers });
+            questions.Add(new Question() { question = "Question 1", answers = QuestionOneAnswers });
+            questions.Add(new Question() { question = "Question 2", answers = QuestionTwoAnswers });
+            questions.Add(new Question() { question = "Question 3", answers = QuestionThreeAnswers });
 
 
         }

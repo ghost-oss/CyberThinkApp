@@ -32,7 +32,6 @@ namespace CyberThink
         public override void ViewWillAppear(bool animated)
         {
             this.ToggleEmptyNotesView();
-            var value = noteListViewModel.noteList.Count;
             notesTableView.ReloadData();
             this.notesTableView.TableFooterView = new UIView();
         }

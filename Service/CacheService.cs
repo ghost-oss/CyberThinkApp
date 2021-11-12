@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Akavache;
 using System.Threading.Tasks;
 using System.Reactive.Linq;
+using CyberThink.Repository;
 
 namespace CyberThink.Service
 {
@@ -21,30 +22,33 @@ namespace CyberThink.Service
 
             List<Module> list = new List<Module>();
 
-            try 
+            try
             {
 
                 list = await BlobCache.LocalMachine.GetObject<List<Module>>(moduleType);
 
-                if (list == null || list.Count == 0) 
+                if (list == null || list.Count == 0)
                 {
-                    FirebaseConnection fbClient = new FirebaseConnection();
+                    ModuleRepository moduleRepository = new ModuleRepository();
+                    moduleRepository.GenerateModules();
+                    list = moduleRepository.RetrieveModuleList(moduleType);
 
-                    fbClient.CreateConnection();
-                    list = fbClient.RetrieveModule(moduleType);
+
                     this.InsertModuleListForCache(list, moduleType);
                 }
 
-            }
-            catch 
-            {
-                FirebaseConnection fbClient = new FirebaseConnection();
 
-                fbClient.CreateConnection();
-                list = fbClient.RetrieveModule(moduleType);
+
+            }
+            catch
+            {
+                ModuleRepository moduleRepository = new ModuleRepository();
+                moduleRepository.GenerateModules();
+                list = moduleRepository.RetrieveModuleList(moduleType);
+
                 this.InsertModuleListForCache(list, moduleType);
             }
-       
+
             return list; 
         }
 

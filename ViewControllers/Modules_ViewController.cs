@@ -45,67 +45,85 @@ namespace CyberThink
 
         public void GenerateViewModels()
         {
-            moduleViewModel = new Module_ViewModel();       
+            moduleViewModel = new Module_ViewModel();
         }
 
         public override void ViewWillAppear(bool animated)
         {
             base.ViewWillAppear(animated);
-            beginnerModulesTableViewHeightConstraint.Constant = 0;
-            intermediaryTableViewHeightConstraint.Constant = 0;
+            phishingModulesTableViewHeightConstraint.Constant = 0;
+            passwordModulesTableViewHeightConstraint.Constant = 0;
+            physicalModulesTableViewHeightConstraint.Constant = 0;
             scrollView.ContentOffset = new CGPoint(0,0);
         }
 
         public void SetUpTableViewsAndButtons()
         {
-            begginerModulesTableView.DataSource = this;
-            begginerModulesTableView.Delegate = this;
-            begginerModulesTableView.AccessibilityIdentifier = "beginnerTableView";
-            begginerModulesTableView.BackgroundColor = UIColor.Clear;
+            phishingModulesTableView.DataSource = this;
+            phishingModulesTableView.Delegate = this;
+            phishingModulesTableView.AccessibilityIdentifier = "phishingModulesTableView";
+            phishingModulesTableView.BackgroundColor = UIColor.Clear;
 
-            IntermediaryModulesTableView.DataSource = this;
-            IntermediaryModulesTableView.Delegate = this;
-            IntermediaryModulesTableView.AccessibilityIdentifier = "IntermediaryTableView";
-            IntermediaryModulesTableView.BackgroundColor = UIColor.Clear;
+            passwordModulesTableView.DataSource = this;
+            passwordModulesTableView.Delegate = this;
+            passwordModulesTableView.AccessibilityIdentifier = "passwordModulesTableView";
+            passwordModulesTableView.BackgroundColor = UIColor.Clear;
+
+            physicalModulesTableView.DataSource = this;
+            physicalModulesTableView.Delegate = this;
+            physicalModulesTableView.AccessibilityIdentifier = "physicalModulesTableView";
+            physicalModulesTableView.BackgroundColor = UIColor.Clear;
+
         }
 
         public void SetUpButtons()
         {
-            UserInterface.ButtonDesigner(beginnerModulesButton, false);
-            UserInterface.ButtonFontDesigner(beginnerModulesButton);
-            beginnerModulesButton.AccessibilityIdentifier = "beginnerButton";
-            beginnerModulesButton.SetTitle("Beginner Modules", UIControlState.Normal);
+            UserInterface.ButtonDesigner(phishingModulesButton, false);
+            UserInterface.ButtonFontDesigner(phishingModulesButton);
+            phishingModulesButton.AccessibilityIdentifier = "phishingModulesButton";
+            phishingModulesButton.SetTitle("Phishing Modules", UIControlState.Normal);
            
-            UserInterface.ButtonDesigner(IntermediaryModulesButton, false);
-            UserInterface.ButtonFontDesigner(IntermediaryModulesButton);
-            IntermediaryModulesButton.AccessibilityIdentifier = "intermediaryButton";
-            IntermediaryModulesButton.SetTitle("Intermediary Modules", UIControlState.Normal); 
+            UserInterface.ButtonDesigner(passwordModulesButton, false);
+            UserInterface.ButtonFontDesigner(passwordModulesButton);
+            passwordModulesButton.AccessibilityIdentifier = "passwordModulesButton";
+            passwordModulesButton.SetTitle("Secure Password Modules", UIControlState.Normal);
+
+            UserInterface.ButtonDesigner(physicalModulesButton, false);
+            UserInterface.ButtonFontDesigner(physicalModulesButton);
+            physicalModulesButton.AccessibilityIdentifier = "physicalModulesButton";
+            physicalModulesButton.SetTitle("Physical Security Modules", UIControlState.Normal);
         }
 
 
         public void SetUpEventHadlers()
         {
-            beginnerModulesButton.TouchUpInside += ToggleTableView;
-            IntermediaryModulesButton.TouchUpInside += ToggleTableView;
+            phishingModulesButton.TouchUpInside += ToggleTableView;
+            passwordModulesButton.TouchUpInside += ToggleTableView;
+            physicalModulesButton.TouchUpInside += ToggleTableView;
         }
 
         public void ToggleTableView(object sender, EventArgs e)
         {
             UIButton button = (UIButton)sender;
 
-            if ((beginnerModulesTableViewHeightConstraint.Constant == 0 && button.AccessibilityIdentifier == "beginnerButton")
-                || (intermediaryTableViewHeightConstraint.Constant == 0 && button.AccessibilityIdentifier == "intermediaryButton"))
+            if ((phishingModulesTableViewHeightConstraint.Constant == 0 && button.AccessibilityIdentifier == "phishingModulesButton")
+                || (passwordModulesTableViewHeightConstraint.Constant == 0 && button.AccessibilityIdentifier == "passwordModulesButton")
+                    || (physicalModulesTableViewHeightConstraint.Constant == 0 && button.AccessibilityIdentifier == "physicalModulesButton"))
             {
                 UIView.Animate(duration: 0.7,
                animation: () =>
                {
-                   if (button.AccessibilityIdentifier == "beginnerButton")
+                   if (button.AccessibilityIdentifier == "phishingModulesButton")
                    {
-                       beginnerModulesTableViewHeightConstraint.Constant = 250;
+                       phishingModulesTableViewHeightConstraint.Constant = 215;
+                   }
+                   else if (button.AccessibilityIdentifier == "passwordModulesButton")
+                   {
+                       passwordModulesTableViewHeightConstraint.Constant = 215;
                    }
                    else
                    {
-                       intermediaryTableViewHeightConstraint.Constant = 250;
+                       physicalModulesTableViewHeightConstraint.Constant = 215;
                    }
                    this.View.LayoutIfNeeded();
                }, completion: null);
@@ -115,14 +133,18 @@ namespace CyberThink
                 UIView.Animate(duration: 0.7,
               animation: () =>
               {
-                  if (button.AccessibilityIdentifier == "beginnerButton")
+                  if (button.AccessibilityIdentifier == "phishingModulesButton")
                   {
-                      beginnerModulesTableViewHeightConstraint.Constant = 0;
+                      phishingModulesTableViewHeightConstraint.Constant = 0;
+                  }
+                  else if (button.AccessibilityIdentifier == "passwordModulesButton")
+                  {
+                      passwordModulesTableViewHeightConstraint.Constant = 0;
                   }
                   else
                   {
-                      intermediaryTableViewHeightConstraint.Constant = 0;
-                  };
+                      physicalModulesTableViewHeightConstraint.Constant = 0;
+                  }
                   this.View.LayoutIfNeeded();
               }, completion: null);
             }
@@ -131,7 +153,7 @@ namespace CyberThink
 
         public nint RowsInSection(UITableView tableView, nint section)
         {
-            return 4;
+            return 3;
         }
 
 
@@ -139,7 +161,7 @@ namespace CyberThink
         {
             HomeMenuOption_Cell cell = tableView.DequeueReusableCell(HomeMenuOption_Cell.Key) as HomeMenuOption_Cell;
 
-            if (tableView.AccessibilityIdentifier == "beginnerTableView")
+            if (tableView.AccessibilityIdentifier == "phishingModulesTableView")
             {
                 if (cell == null)
                 {
@@ -147,7 +169,24 @@ namespace CyberThink
                     var views = NSBundle.MainBundle.LoadNib(HomeMenuOption_Cell.Key, cell, null);
                     cell = Runtime.GetNSObject(views.ValueAt(0)) as HomeMenuOption_Cell;
 
-                    Module module = moduleViewModel.beginnerModulesList[indexPath.Row];
+                    Module module = moduleViewModel.phishingModulesList[indexPath.Row];
+                    cell.BindDataToCell(module.moduleName);
+
+                    if (module.isComplete == true)
+                    {
+                        cell.MarkModuleAsComplete();
+                    }
+                }
+            }
+            else if (tableView.AccessibilityIdentifier == "passwordModulesTableView")
+            {
+                if (cell == null)
+                {
+                    cell = new HomeMenuOption_Cell();
+                    var views = NSBundle.MainBundle.LoadNib(HomeMenuOption_Cell.Key, cell, null);
+                    cell = Runtime.GetNSObject(views.ValueAt(0)) as HomeMenuOption_Cell;
+
+                    Module module = moduleViewModel.passwordModulesList[indexPath.Row];
                     cell.BindDataToCell(module.moduleName);
 
                     if (module.isComplete == true)
@@ -164,7 +203,7 @@ namespace CyberThink
                     var views = NSBundle.MainBundle.LoadNib(HomeMenuOption_Cell.Key, cell, null);
                     cell = Runtime.GetNSObject(views.ValueAt(0)) as HomeMenuOption_Cell;
 
-                    Module module = moduleViewModel.intermidiateModulesList[indexPath.Row];
+                    Module module = moduleViewModel.physicalModulesList[indexPath.Row];
                     cell.BindDataToCell(module.moduleName);
 
                     if (module.isComplete == true)
@@ -182,14 +221,19 @@ namespace CyberThink
         [Export("tableView:didSelectRowAtIndexPath:")]
         public void RowSelected(UITableView tableView, NSIndexPath indexPath)
         {
-            if (tableView.AccessibilityIdentifier == "beginnerTableView")
+            if (tableView.AccessibilityIdentifier == "phishingModulesTableView")
             {
-                Module module = moduleViewModel.beginnerModulesList[indexPath.Row];
+                Module module = moduleViewModel.phishingModulesList[indexPath.Row];
+                this.ModuleSelected(module);
+            }
+            else if (tableView.AccessibilityIdentifier == "passwordModulesTableView")
+            {
+                Module module = moduleViewModel.passwordModulesList[indexPath.Row];
                 this.ModuleSelected(module);
             }
             else
             {
-                Module module = moduleViewModel.intermidiateModulesList[indexPath.Row];
+                Module module = moduleViewModel.physicalModulesList[indexPath.Row];
                 this.ModuleSelected(module);
             }
         }

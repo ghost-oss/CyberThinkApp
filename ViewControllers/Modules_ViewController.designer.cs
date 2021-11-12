@@ -13,64 +13,88 @@ namespace CyberThink
 	partial class Modules_ViewController
 	{
 		[Outlet]
-		UIKit.UITableView begginerModulesTableView { get; set; }
-
-		[Outlet]
-		UIKit.UIButton beginnerModulesButton { get; set; }
-
-		[Outlet]
-		UIKit.NSLayoutConstraint beginnerModulesTableViewHeightConstraint { get; set; }
-
-		[Outlet]
-		UIKit.UIButton IntermediaryModulesButton { get; set; }
-
-		[Outlet]
-		UIKit.UITableView IntermediaryModulesTableView { get; set; }
-
-		[Outlet]
-		UIKit.NSLayoutConstraint intermediaryTableViewHeightConstraint { get; set; }
-
-		[Outlet]
 		UIKit.UIView modulesBackgroundView { get; set; }
+
+		[Outlet]
+		UIKit.UIButton passwordModulesButton { get; set; }
+
+		[Outlet]
+		UIKit.UITableView passwordModulesTableView { get; set; }
+
+		[Outlet]
+		UIKit.NSLayoutConstraint passwordModulesTableViewHeightConstraint { get; set; }
+
+		[Outlet]
+		UIKit.UIButton phishingModulesButton { get; set; }
+
+		[Outlet]
+		UIKit.UITableView phishingModulesTableView { get; set; }
+
+		[Outlet]
+		UIKit.NSLayoutConstraint phishingModulesTableViewHeightConstraint { get; set; }
+
+		[Outlet]
+		UIKit.UIButton physicalModulesButton { get; set; }
+
+		[Outlet]
+		UIKit.UITableView physicalModulesTableView { get; set; }
+
+		[Outlet]
+		UIKit.NSLayoutConstraint physicalModulesTableViewHeightConstraint { get; set; }
 
 		[Outlet]
 		UIKit.UIScrollView scrollView { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (begginerModulesTableView != null) {
-				begginerModulesTableView.Dispose ();
-				begginerModulesTableView = null;
-			}
-
-			if (beginnerModulesButton != null) {
-				beginnerModulesButton.Dispose ();
-				beginnerModulesButton = null;
-			}
-
-			if (beginnerModulesTableViewHeightConstraint != null) {
-				beginnerModulesTableViewHeightConstraint.Dispose ();
-				beginnerModulesTableViewHeightConstraint = null;
-			}
-
-			if (IntermediaryModulesButton != null) {
-				IntermediaryModulesButton.Dispose ();
-				IntermediaryModulesButton = null;
-			}
-
-			if (IntermediaryModulesTableView != null) {
-				IntermediaryModulesTableView.Dispose ();
-				IntermediaryModulesTableView = null;
-			}
-
-			if (intermediaryTableViewHeightConstraint != null) {
-				intermediaryTableViewHeightConstraint.Dispose ();
-				intermediaryTableViewHeightConstraint = null;
-			}
-
 			if (modulesBackgroundView != null) {
 				modulesBackgroundView.Dispose ();
 				modulesBackgroundView = null;
+			}
+
+			if (passwordModulesButton != null) {
+				passwordModulesButton.Dispose ();
+				passwordModulesButton = null;
+			}
+
+			if (passwordModulesTableView != null) {
+				passwordModulesTableView.Dispose ();
+				passwordModulesTableView = null;
+			}
+
+			if (passwordModulesTableViewHeightConstraint != null) {
+				passwordModulesTableViewHeightConstraint.Dispose ();
+				passwordModulesTableViewHeightConstraint = null;
+			}
+
+			if (phishingModulesButton != null) {
+				phishingModulesButton.Dispose ();
+				phishingModulesButton = null;
+			}
+
+			if (phishingModulesTableView != null) {
+				phishingModulesTableView.Dispose ();
+				phishingModulesTableView = null;
+			}
+
+			if (phishingModulesTableViewHeightConstraint != null) {
+				phishingModulesTableViewHeightConstraint.Dispose ();
+				phishingModulesTableViewHeightConstraint = null;
+			}
+
+			if (physicalModulesButton != null) {
+				physicalModulesButton.Dispose ();
+				physicalModulesButton = null;
+			}
+
+			if (physicalModulesTableView != null) {
+				physicalModulesTableView.Dispose ();
+				physicalModulesTableView = null;
+			}
+
+			if (physicalModulesTableViewHeightConstraint != null) {
+				physicalModulesTableViewHeightConstraint.Dispose ();
+				physicalModulesTableViewHeightConstraint = null;
 			}
 
 			if (scrollView != null) {
