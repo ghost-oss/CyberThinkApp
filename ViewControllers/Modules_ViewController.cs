@@ -82,16 +82,19 @@ namespace CyberThink
             UserInterface.ButtonFontDesigner(phishingModulesButton);
             phishingModulesButton.AccessibilityIdentifier = "phishingModulesButton";
             phishingModulesButton.SetTitle("Phishing Modules", UIControlState.Normal);
-           
+            phishingModulesButton.SetTitleColor(UIColor.White, UIControlState.Normal);
+
             UserInterface.ButtonDesigner(passwordModulesButton, false);
             UserInterface.ButtonFontDesigner(passwordModulesButton);
             passwordModulesButton.AccessibilityIdentifier = "passwordModulesButton";
             passwordModulesButton.SetTitle("Secure Password Modules", UIControlState.Normal);
+            passwordModulesButton.SetTitleColor(UIColor.White, UIControlState.Normal); 
 
             UserInterface.ButtonDesigner(physicalModulesButton, false);
             UserInterface.ButtonFontDesigner(physicalModulesButton);
             physicalModulesButton.AccessibilityIdentifier = "physicalModulesButton";
             physicalModulesButton.SetTitle("Physical Security Modules", UIControlState.Normal);
+            physicalModulesButton.SetTitleColor(UIColor.White, UIControlState.Normal);
         }
 
 
