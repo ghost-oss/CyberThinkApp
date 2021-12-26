@@ -30,14 +30,33 @@ namespace CyberThink
             //Lines + SizeToFit() allow us to align text left-top and resize acording to text length
             moduleInformation.Lines = 0;
             moduleInformation.SizeToFit();
+            moduleInformation.LineBreakMode = UILineBreakMode.WordWrap;
             moduleInformation.Text = temporaryInformation;
             moduleInformation.Font = UIFont.SystemFontOfSize(18, UIFontWeight.Regular);
+        }
+
+        public override void ViewDidAppear(bool animated)
+        {
+            base.ViewDidAppear(animated);
+            this.AdjustScrollViewHeight();
+        }
+
+        public override void DidRotate(UIInterfaceOrientation fromInterfaceOrientation)
+        {
+            base.DidRotate(fromInterfaceOrientation);
+            AdjustScrollViewHeight();
         }
 
         public void BindData(string title, string information)
         {
             temporaryTitle = title;
             temporaryInformation = information;
+        }
+
+        public void AdjustScrollViewHeight()
+        {
+            var moduleInformationHeight = moduleInformation.Frame.Height;
+            viewForScrollHeightConstraint.Constant = moduleInformationHeight + 100;
         }
     }
 }

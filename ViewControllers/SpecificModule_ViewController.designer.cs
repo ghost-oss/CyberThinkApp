@@ -16,18 +16,34 @@ namespace CyberThink
 		UIKit.UILabel moduleInformation { get; set; }
 
 		[Outlet]
+		UIKit.NSLayoutConstraint moduleInformationHeightConstraint { get; set; }
+
+		[Outlet]
 		UIKit.UILabel moduleTitle { get; set; }
+
+		[Outlet]
+		UIKit.NSLayoutConstraint viewForScrollHeightConstraint { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (moduleInformation != null) {
+				moduleInformation.Dispose ();
+				moduleInformation = null;
+			}
+
 			if (moduleTitle != null) {
 				moduleTitle.Dispose ();
 				moduleTitle = null;
 			}
 
-			if (moduleInformation != null) {
-				moduleInformation.Dispose ();
-				moduleInformation = null;
+			if (moduleInformationHeightConstraint != null) {
+				moduleInformationHeightConstraint.Dispose ();
+				moduleInformationHeightConstraint = null;
+			}
+
+			if (viewForScrollHeightConstraint != null) {
+				viewForScrollHeightConstraint.Dispose ();
+				viewForScrollHeightConstraint = null;
 			}
 		}
 	}
