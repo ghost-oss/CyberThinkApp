@@ -804,7 +804,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSW-FP-WSw">
-                                <rect key="frame" x="20" y="182" width="308" height="20.5"/>
+                                <rect key="frame" x="35" y="184" width="359" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -813,11 +813,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="N95-wv-PN9" firstAttribute="top" secondItem="QRw-ty-nO2" secondAttribute="bottom" constant="50" id="2i4-LB-qdE"/>
-                            <constraint firstItem="OSW-FP-WSw" firstAttribute="leading" secondItem="fQr-jS-5YX" secondAttribute="leadingMargin" id="LS2-bm-XfJ"/>
+                            <constraint firstItem="OSW-FP-WSw" firstAttribute="trailing" secondItem="fQr-jS-5YX" secondAttribute="trailingMargin" id="CMM-Ju-hpn"/>
+                            <constraint firstItem="OSW-FP-WSw" firstAttribute="leading" secondItem="fQr-jS-5YX" secondAttribute="leadingMargin" constant="15" id="KJq-ax-uR8"/>
+                            <constraint firstItem="OSW-FP-WSw" firstAttribute="top" secondItem="N95-wv-PN9" secondAttribute="bottom" constant="41" id="LJF-XZ-8A6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="N95-wv-PN9" secondAttribute="trailing" constant="59" id="hWr-Qa-4Kr"/>
                             <constraint firstItem="N95-wv-PN9" firstAttribute="leading" secondItem="fQr-jS-5YX" secondAttribute="leadingMargin" constant="55" id="hZ6-Ue-InY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="OSW-FP-WSw" secondAttribute="trailing" constant="66" id="k2k-KF-JJS"/>
-                            <constraint firstItem="OSW-FP-WSw" firstAttribute="top" secondItem="N95-wv-PN9" secondAttribute="bottom" constant="39" id="zGG-lG-XDr"/>
                         </constraints>
                     </view>
                     <connections>

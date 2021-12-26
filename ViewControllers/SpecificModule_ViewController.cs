@@ -24,11 +24,14 @@ namespace CyberThink
         public override void ViewWillAppear(bool animated)
         {
             moduleTitle.Text = temporaryTitle;
+            moduleTitle.TextAlignment = UITextAlignment.Center;
+            moduleTitle.Font = UIFont.BoldSystemFontOfSize(20);
 
             //Lines + SizeToFit() allow us to align text left-top and resize acording to text length
             moduleInformation.Lines = 0;
             moduleInformation.SizeToFit();
             moduleInformation.Text = temporaryInformation;
+            moduleInformation.Font = UIFont.SystemFontOfSize(18, UIFontWeight.Regular);
         }
 
         public void BindData(string title, string information)

@@ -27,6 +27,8 @@ namespace CyberThink.Service
 
                 list = await BlobCache.LocalMachine.GetObject<List<Module>>(moduleType);
 
+                list.Clear(); //Remove once testing for ModuleRepository is complete to allow testing
+
                 if (list == null || list.Count == 0)
                 {
                     ModuleRepository moduleRepository = new ModuleRepository();
