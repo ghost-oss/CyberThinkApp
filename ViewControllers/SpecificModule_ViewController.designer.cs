@@ -13,6 +13,9 @@ namespace CyberThink
 	partial class SpecificModule_ViewController
 	{
 		[Outlet]
+		UIKit.UIView backgroundView { get; set; }
+
+		[Outlet]
 		UIKit.UILabel moduleInformation { get; set; }
 
 		[Outlet]
@@ -31,19 +34,24 @@ namespace CyberThink
 				moduleInformation = null;
 			}
 
-			if (moduleTitle != null) {
-				moduleTitle.Dispose ();
-				moduleTitle = null;
-			}
-
 			if (moduleInformationHeightConstraint != null) {
 				moduleInformationHeightConstraint.Dispose ();
 				moduleInformationHeightConstraint = null;
 			}
 
+			if (moduleTitle != null) {
+				moduleTitle.Dispose ();
+				moduleTitle = null;
+			}
+
 			if (viewForScrollHeightConstraint != null) {
 				viewForScrollHeightConstraint.Dispose ();
 				viewForScrollHeightConstraint = null;
+			}
+
+			if (backgroundView != null) {
+				backgroundView.Dispose ();
+				backgroundView = null;
 			}
 		}
 	}

@@ -849,6 +849,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundView" destination="19l-aa-DQs" id="6de-h1-gAo"/>
                         <outlet property="moduleInformation" destination="OSW-FP-WSw" id="29R-Vp-eio"/>
                         <outlet property="moduleInformationHeightConstraint" destination="gSI-my-be1" id="ebn-Cd-eXu"/>
                         <outlet property="moduleTitle" destination="N95-wv-PN9" id="KMG-Ap-l85"/>
