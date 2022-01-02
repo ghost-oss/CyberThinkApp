@@ -31,11 +31,9 @@ namespace CyberThink
             this.SetBackgrounds();
             this.SetUpEventHandlers();
             this.SetNavBarTransparency();
-            //this.View.BackgroundColor = UIColor.FromRGB(01, 08, 36); //VC Background color
 
-            this.View.BackgroundColor = UIColor.FromRGB(36, 46, 71);
-            this.innerViewForScroll.BackgroundColor = UIColor.FromRGB(36, 46, 71);
-
+            this.View.BackgroundColor = UIColor.FromRGB(0,76,153);
+            this.innerViewForScroll.BackgroundColor = UIColor.FromRGB(0, 76, 153);
             home_ViewModel = new Home_ViewModel();
 
 
@@ -53,6 +51,9 @@ namespace CyberThink
         {
             base.ViewWillAppear(animated);
             this.SetUpButtonUI();
+            passwordProgressView.Transform = CGAffineTransform.MakeScale(1, 5);
+            phishingProgressView.Transform = CGAffineTransform.MakeScale(1, 5);
+            physicalProgressView.Transform = CGAffineTransform.MakeScale(1, 5);
 
         }
 
@@ -76,15 +77,15 @@ namespace CyberThink
             UserInterface.ButtonDesigner(revisionButton, true);
             UserInterface.ButtonFontDesigner(revisionButton);
             revisionButton.SetTitle("Modules", UIControlState.Normal);
-            revisionButton.SetTitleColor(UIColor.White, UIControlState.Normal);
+            revisionButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
             revisionButton.TranslatesAutoresizingMaskIntoConstraints = false;
             revisionButton.Transform = CGAffineTransform.MakeIdentity(); //Sets the button back to normal size when moving to and from VC's
 
 
             UserInterface.ButtonDesigner(quizButton,true);
             UserInterface.ButtonFontDesigner(quizButton);
-            quizButton.SetTitle("Quiz", UIControlState.Normal);
-            quizButton.SetTitleColor(UIColor.White, UIControlState.Normal);
+            quizButton.SetTitle("Assessment", UIControlState.Normal);
+            quizButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
             quizButton.TranslatesAutoresizingMaskIntoConstraints = false;
             quizButton.Transform = CGAffineTransform.MakeIdentity();
         }

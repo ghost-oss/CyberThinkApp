@@ -15,14 +15,19 @@ namespace CyberThink.Repository
 
         public void GenerateModules()
         {
-            
+
             passwordeModulesList = new List<Module>();
-            passwordeModulesList.Add(new Module() { moduleName = "Password Overview",
+            passwordeModulesList.Add(new Module()
+            {
+                moduleName = "Password Overview",
                 moduleInformation = "A password is simply the most convenient (and easiest) way to protect our devices. It is a means by which a user proves they are authorised to use a device. Great, it’s secure…but how secure is it? The modules going forward will consolidate your understanding on how weak passwords can be exploited and how you can implement secure passwords!\n\n" +
                 "With modern technology, computing devices connect and share information around the globe, and they may also connect with financial transactions. These devices are all vulnerable to unauthorised users. The consequences of the victims or organisations who encounter a break-in may include financial loss, loss of reputability or even personal records. It is crucial that passwords are securely managed, contain some complexity and is difficult for an adversary to guess.\n\n",
-                isComplete = false });
+                isComplete = false
+            });
 
-            passwordeModulesList.Add(new Module() { moduleName = "Password Attacks",
+            passwordeModulesList.Add(new Module()
+            {
+                moduleName = "Password Attacks",
                 moduleInformation = "Brute-Force Attack\n" +
                 "A brute-force is a type of attack whereby every permutation of a password is tested against a password protected system. An attacker may tailor the attack such as specificizing only attempting numbers or simply words. Once the attack is initiated, it is only constrained by the computational power of the adversary, and multiple attempts are made to breach the user’s account\n\n" +
                 "Dictionary attacks:\n" +
@@ -34,9 +39,12 @@ namespace CyberThink.Repository
                 "This technique is often seen in a targeted attack. The adversary may have some relation to you within a workplace. Local Discovery attack occurs when a user writes their password down which can be seen by anyone in plain-text form. Often without your knowledge or consent, the password is then leaked and utilised in a malicious way. Scary right?\n\n" +
                 "Guessing\n" +
                 "If all fails, hackers may resort to try to simply guess your password. This is often seen as many users rely on memorable phrases. These phrases are often related to locations, hobbies, interests, pets; much which is already exposed through other means such as social profiles.\n\n",
-                isComplete = false });
+                isComplete = false
+            });
 
-            passwordeModulesList.Add(new Module() { moduleName = "Secure Techniques",
+            passwordeModulesList.Add(new Module()
+            {
+                moduleName = "Secure Techniques",
                 moduleInformation = "Longer Passwords:\n" +
                 "The password that you utilise should be at a minimum of 8 characters long, although for additional security this could be longer. This is the general baseline when creating a password and yields greater security, making it difficult for an adversary to guess.\n\n" +
                 "Increased Complexity:\n" +
@@ -50,18 +58,24 @@ namespace CyberThink.Repository
                 "There are many password managers which also generate unique and strong passwords to ensure you are not using the same passwords within other domains. A single password manager can reduce your chances of being exploited by a large margin.\n\n" +
                 "Be smart:\n" +
                 "One of the biggest vulnerabilities known to an adversary are people. Be smart when logging in or using personal credentials publicly. Never disclose any private information that could lead to a breach and under any circumstances do not share your password!\n\n",
-                isComplete = false });
+                isComplete = false
+            });
 
 
 
             phishingModulesList = new List<Module>();
-            phishingModulesList.Add(new Module() {moduleName = "Introduction",
+            phishingModulesList.Add(new Module()
+            {
+                moduleName = "Introduction",
                 moduleInformation = "Phishing attacks are a subsidiary of social engineering attack, and they consist of various targets depending on the adversary. Attackers may mask themselves as a legitimate representative to gain further information, often leading to theft of identity or notable financial loss.\n\n" +
                 "This type of cyber-attack may utilise technology such as email, mobile device, or text messages to lure individuals into releasing confidential information. The information could range from passwords, credit card numbers, national security numbers or even details about the individual or organisation. \n\n" +
                 "The following modules will give you an understanding of the different type of phishing techniques an attacker may use against you and how you can protect yourself from phishing attacks within a workplace.\n\n",
-                isComplete = false });
+                isComplete = false
+            });
 
-            phishingModulesList.Add(new Module() { moduleName = "Phishing Attacks",
+            phishingModulesList.Add(new Module()
+            {
+                moduleName = "Phishing Attacks",
                 moduleInformation = "Email Phishing:\n" +
                 "Email Phishing is the most common attack vector for an attacker to exploit. This technique involves an adversary to impersonate a legitimate organization and sends mass emails to as many addresses as possible.\n\n" +
                 "The beginning of the email usually has no specific name and is usually placed with ‘Dear Customer’ or ‘To Whom It May Concern’. Additionally, the contents within the email are generic.\n\n" +
@@ -76,9 +90,12 @@ namespace CyberThink.Repository
                 "Vishing:\n" +
                 "Voice phishing, commonly known as vishing, involves an attacker using a phone to exploit a victim. An attacker usually relays a voice message which may impersonate a legitimate institution such as the government to entice the victim to handing over detail.\n\n" +
                 "In a workplace, a common example could include a call from another institution who require further information for a successful partnership. They would then go to ask details of the organisation and yourself to gain a further insight. Be wary of these!\n\n",
-                isComplete = false });
+                isComplete = false
+            });
 
-            phishingModulesList.Add(new Module() { moduleName = "Defensive Techniques",
+            phishingModulesList.Add(new Module()
+            {
+                moduleName = "Defensive Techniques",
                 moduleInformation = "Phishing:\n" +
                 "Investigate the email before responding. You may start by analysing the ‘From’ field and dictate whether the sender’s name has been misspelt or been padded with extra characters. Next, be sure to verify the email address domain and dictate whether it is genuine. An example of a fake email domain is Microsoft.co.o.\n\n" +
                 "Read the email and look for any malicious text, links and any request seeking personal information. Validate if the email is free of any spelling errors or odd grammar and think about the urgency of the message. Review if the time coincides with the event that has been raised and any unusual personal information requested.\n\n" +
@@ -92,17 +109,23 @@ namespace CyberThink.Repository
                 "Smishing:\n" +
                 "Do not assume as text is genuine due to its perfectly constructed grammar. Smishing is easier to mask as a legitimate organisation as it is shorter than emails. The object of smishing is to click a link, therefore validate the link and the link-domain.\n\n" +
                 "Never share personal information via text as if it is urgent than an organization may contact you in a more appropriate manor such as email or phone call. Thirdly, you can search the organization and visit their website directly or phone them using a trusted telephone number.\n\n",
-                isComplete = false });
+                isComplete = false
+            });
 
-         
+
             physicalModulesList = new List<Module>();
-            physicalModulesList.Add(new Module() { moduleName = "Overview",
+            physicalModulesList.Add(new Module()
+            {
+                moduleName = "Overview",
                 moduleInformation = "Not all cyber threats begin within the digital realm, and it is imperative to understand they can begin within your physical workspace. An adversary may physically access your workplace or potentially performing actions to gain access to unauthorised areas. They may continue to then leverage their situation and extract large pieces of information and utilise it to support future cyber-attacks.\n\n" +
                 "Physical security is imperative for an organization as it protects and safeguards company personnel, data and physical hardware from adversaries who could damage and disrupt the operations with a business. It ensures that physical properties are protected from threats such as theft, damage and even modifications.\n\n" +
                 "The following modules will consolidate your understanding on secure workplace hygiene, physical tailgating, and how an attacker could potentially exploit these vectors.\n\n",
-                isComplete = false });
+                isComplete = false
+            });
 
-            physicalModulesList.Add(new Module() { moduleName = "Secure Workplace Hygiene",
+            physicalModulesList.Add(new Module()
+            {
+                moduleName = "Secure Workplace Hygiene",
                 moduleInformation = "Securing Workstations:\n" +
                 "Your workstation is an area which you utilise to device business strategy and solutions. Your given workstation should be clean, de-clustered of any exposed documents and sticker notes which may contain password or hints. Additionally, all sensitive documents must be stored within a file cabinet and any documents no long in use must be shredded.\n\n" +
                 "If an adversary acquired confidential documents in a workplace, they could leak it to unauthorised users and seriously damage the reputation of the business. This could adversely affect potential partnerships, stakeholders, or financial gain.\n\n" +
@@ -115,16 +138,20 @@ namespace CyberThink.Repository
                 "Procedures:\n" +
                 "You must also respect company security protocols and guidelines. For example, under no circumstances should you share your employee ID or badge to bypass any security entry points. A good employee should educate the co-worker of the security policy procedure for those who have lost their card.\n\n" +
                 "Finally, to be kept up to date with all security procedures, it is imperative to attend security training programs. This will keep you up to date with all security related processes, raise any new security concerns and educate you to tackle suspicious activity appropriately.\n\n",
-                isComplete = false });
+                isComplete = false
+            });
 
-            physicalModulesList.Add(new Module() { moduleName = "Tailgaiting",
+            physicalModulesList.Add(new Module()
+            {
+                moduleName = "Tailgaiting",
                 moduleInformation = "The tailgating technique involves an attacker gaining unauthorised access to the business premises by following an employee typically from behind. The attacker can perform two objectives from this action:\n\n" +
                 "1. They can leverage their situation by providing further reconnaissance on the organisation to support future cyber-attacks and use social engineering to collect further data such as employee names and confidential documents.\n\n" +
                 "2. The attacker at this point may also be able to access unauthorised areas and tamper with physical hardware to cause destruction. These areas entail of Server Rooms and/or Networking hardware, which could potentially grant them access to business systems.\n\n" +
                 "A typical scenario of social engineering could include an attacker exploiting your empathy. An adversary may lie about ‘forgetting’ their employee ID and request you to permit entry to an unauthorised area. Security mechanisms should be enforced to prevent these situations. Examples include:\n\n" +
                 "Employee Badge - A plastic card which proves your identification and displays necessary information which can be easily identifiable to other employees. This could include your name, employee number and a photo.\n\n" +
                 "Physical Access Control - These devices are usually allocated next to entry points of the organisation. This requires an authorised badge to be scanned and dictates whether he/she is permitted to access the facilities behind the entry point.\n\n",
-                isComplete = false });
+                isComplete = false
+            });
         }
 
 
@@ -143,6 +170,7 @@ namespace CyberThink.Repository
                 return physicalModulesList;
             }
         }
+    }
 }
 
        

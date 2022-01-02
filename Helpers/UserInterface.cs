@@ -22,8 +22,7 @@ namespace CyberThink.Helpers
             button.Layer.ShadowRadius = 3;
             button.Layer.ShadowOffset = new CGSize(4.0f, 4.0f);
             button.Layer.ShadowOpacity = toggleShadows ? 3 : 0;
-            //button.Layer.BackgroundColor = UIColor.FromRGB(9, 35, 97).CGColor;
-            button.Layer.BackgroundColor = UIColor.Orange.CGColor;
+            button.Layer.BackgroundColor = UIColor.FromRGB(199,199,204).CGColor;
             button.Layer.BorderColor = UIColor.Black.CGColor;
             button.Layer.BorderWidth = 2;
         }
@@ -31,7 +30,17 @@ namespace CyberThink.Helpers
         public static void BackgroundDesigner(UIView view)
         {
             view.Layer.CornerRadius = 15;
-            view.BackgroundColor = UIColor.FromRGB(4, 48, 99);
+            view.BackgroundColor = UIColor.FromRGB(0,51,102);
+
+
+            view.Layer.ShadowColor = UIColor.FromRGB(229, 229, 234).CGColor;
+            view.Layer.ShadowRadius = 3;
+            view.Layer.ShadowOffset = new CGSize(4.0f, 4.0f);
+            view.Layer.ShadowOpacity = 3;
+            view.Layer.BorderColor = UIColor.FromRGB(229, 229, 234).CGColor;
+            view.Layer.BorderWidth = 2;
+
+
 
         }
 

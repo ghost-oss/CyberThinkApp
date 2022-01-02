@@ -27,14 +27,9 @@ namespace CyberThink
             this.SetUpEventHadlers();
             this.SetUpTableViewsAndButtons();
             this.SetUpButtons();
-            //this.GenerateViewModels();
 
-            //this.View.BackgroundColor = UIColor.FromRGB(01, 08, 36);
-            //modulesBackgroundView.Layer.BackgroundColor = UIColor.FromRGB(01, 08, 36).CGColor;
-
-
-            this.View.BackgroundColor = UIColor.FromRGB(36, 46, 71);
-            modulesBackgroundView.Layer.BackgroundColor = UIColor.FromRGB(36, 46, 71).CGColor;
+            this.View.BackgroundColor = UIColor.FromRGB(0, 76, 153);
+            modulesBackgroundView.Layer.BackgroundColor = UIColor.FromRGB(0, 76, 153).CGColor;
         }
 
         public override void ViewDidAppear(bool animated)
@@ -82,19 +77,25 @@ namespace CyberThink
             UserInterface.ButtonFontDesigner(phishingModulesButton);
             phishingModulesButton.AccessibilityIdentifier = "phishingModulesButton";
             phishingModulesButton.SetTitle("Phishing Modules", UIControlState.Normal);
-            phishingModulesButton.SetTitleColor(UIColor.White, UIControlState.Normal);
+            phishingModulesButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+            phishingModulesButton.Layer.BorderColor = UIColor.White.CGColor;
+            phishingModulesButton.Layer.BorderWidth = 2;
 
             UserInterface.ButtonDesigner(passwordModulesButton, false);
             UserInterface.ButtonFontDesigner(passwordModulesButton);
             passwordModulesButton.AccessibilityIdentifier = "passwordModulesButton";
             passwordModulesButton.SetTitle("Secure Password Modules", UIControlState.Normal);
-            passwordModulesButton.SetTitleColor(UIColor.White, UIControlState.Normal); 
+            passwordModulesButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+            passwordModulesButton.Layer.BorderColor = UIColor.White.CGColor;
+            passwordModulesButton.Layer.BorderWidth = 2;
 
             UserInterface.ButtonDesigner(physicalModulesButton, false);
             UserInterface.ButtonFontDesigner(physicalModulesButton);
             physicalModulesButton.AccessibilityIdentifier = "physicalModulesButton";
             physicalModulesButton.SetTitle("Physical Security Modules", UIControlState.Normal);
-            physicalModulesButton.SetTitleColor(UIColor.White, UIControlState.Normal);
+            physicalModulesButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+            physicalModulesButton.Layer.BorderColor = UIColor.White.CGColor;
+            physicalModulesButton.Layer.BorderWidth = 2;
         }
 
 

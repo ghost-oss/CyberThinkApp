@@ -35,9 +35,9 @@ namespace CyberThink.Cells
 
         public void SetUpCellUI()
         {
-            this.BackgroundColor = UIColor.Orange;
-            //this.Layer.BorderColor = UIColor.FromRGB(01, 08, 36).CGColor;
-            this.Layer.BorderColor = UIColor.FromRGB(36, 46, 71).CGColor;
+            this.BackgroundColor = UIColor.FromRGB(199, 199, 204);
+     
+            this.Layer.BorderColor = UIColor.FromRGB(0, 76, 153).CGColor;
             this.Layer.BorderWidth = 5;
 
             this.ContentView.Layer.CornerRadius = 15;
@@ -60,6 +60,7 @@ namespace CyberThink.Cells
         {
             OptionTitle.Text = title;
             UserInterface.LabelDesigner(OptionTitle,18);
+            OptionTitle.TextColor = UIColor.Black;
         }
 
         public void MarkModuleAsComplete()
