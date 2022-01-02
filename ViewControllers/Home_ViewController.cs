@@ -162,6 +162,7 @@ namespace CyberThink
         public void RevisionBtnTouchDown(object sender, EventArgs e)
         {
             UserInterface.ButtonDesigner(revisionButton,false);
+            revisionButton.BackgroundColor = UIColor.White;
             ViewAnimations.Pop(revisionButton,0.8,1,1);   
         }
 
@@ -180,6 +181,7 @@ namespace CyberThink
         public void QuizBtnTouchDown(object sender, EventArgs e)
         {
             UserInterface.ButtonDesigner(quizButton, false);
+            quizButton.BackgroundColor = UIColor.White;
             ViewAnimations.Pop(quizButton,0.8,1,1);
         }
 
