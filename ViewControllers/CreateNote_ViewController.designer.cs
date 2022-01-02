@@ -16,6 +16,9 @@ namespace CyberThink
 		UIKit.UIView createNoteBackgroundView { get; set; }
 
 		[Outlet]
+		UIKit.UIView innerScrollView { get; set; }
+
+		[Outlet]
 		UIKit.UILabel noteLabel { get; set; }
 
 		[Outlet]
@@ -60,6 +63,11 @@ namespace CyberThink
 			if (saveNoteButton != null) {
 				saveNoteButton.Dispose ();
 				saveNoteButton = null;
+			}
+
+			if (innerScrollView != null) {
+				innerScrollView.Dispose ();
+				innerScrollView = null;
 			}
 		}
 	}

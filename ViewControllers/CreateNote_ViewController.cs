@@ -21,6 +21,7 @@ namespace CyberThink
             this.SetUpCreateNoteLabels();
             this.SetUpSaveNoteButton();
             createNotesViewModel = new CreateNote_ViewModel();
+            this.View.BackgroundColor = UIColor.FromRGB(0, 76, 153);
         }
 
         public override void ViewWillAppear(bool animated)
@@ -31,6 +32,8 @@ namespace CyberThink
         public void SetUpBackgrounds()
         {
             UserInterface.BackgroundDesigner(createNoteBackgroundView);
+            this.View.BackgroundColor = UIColor.FromRGB(0, 76, 153);
+            innerScrollView.BackgroundColor = UIColor.FromRGB(0, 76, 153);
         }
 
         public void SetUpCreateNoteLabels()
@@ -46,6 +49,7 @@ namespace CyberThink
             UserInterface.ButtonDesigner(saveNoteButton,true);
             UserInterface.ButtonFontDesigner(saveNoteButton);
             saveNoteButton.SetTitle("Save Note", UIControlState.Normal);
+            saveNoteButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
             saveNoteButton.TouchUpInside += SaveNoteBtnClicked;
 
         }

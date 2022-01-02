@@ -26,7 +26,9 @@ namespace CyberThink
             this.SetUpToolBar();
             notesTableView.Delegate = this;
             notesTableView.DataSource = this;
-                 
+            this.View.BackgroundColor = UIColor.FromRGB(0, 76, 153);
+            notesTableView.BackgroundColor = UIColor.FromRGB(0, 76, 153);
+
         }
 
         public override void ViewWillAppear(bool animated)
@@ -34,6 +36,7 @@ namespace CyberThink
             this.ToggleEmptyNotesView();
             notesTableView.ReloadData();
             this.notesTableView.TableFooterView = new UIView();
+           
         }
 
 

@@ -45,11 +45,11 @@ namespace CyberThink.Cells
 
         public void GenerateBackgroundColor()
         {
-            colorSelection.Add(UIColor.FromRGB(255, 211, 89));
-            colorSelection.Add(UIColor.FromRGB(214, 247, 146));
-            colorSelection.Add(UIColor.FromRGB(91, 187, 207));
-            colorSelection.Add(UIColor.FromRGB(216, 179, 242));
-            colorSelection.Add(UIColor.FromRGB(242, 179, 179));
+            colorSelection.Add(UIColor.FromRGB(229,229,234));
+            colorSelection.Add(UIColor.FromRGB(100,210,255));
+            colorSelection.Add(UIColor.FromRGB(10, 132, 255));
+            colorSelection.Add(UIColor.FromRGB(191, 242, 242));
+            colorSelection.Add(UIColor.FromRGB(102,212,207));
 
             var random = new Random().Next(colorSelection.Count);
             var color = colorSelection[random];

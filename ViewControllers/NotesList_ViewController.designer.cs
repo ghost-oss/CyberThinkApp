@@ -22,6 +22,9 @@ namespace CyberThink
 		UIKit.UIView emptyNotesView { get; set; }
 
 		[Outlet]
+		UIKit.UIView innerScrollView { get; set; }
+
+		[Outlet]
 		UIKit.UITableView notesTableView { get; set; }
 
 		[Outlet]
@@ -44,14 +47,19 @@ namespace CyberThink
 				emptyNotesView = null;
 			}
 
+			if (notesTableView != null) {
+				notesTableView.Dispose ();
+				notesTableView = null;
+			}
+
 			if (testTableView != null) {
 				testTableView.Dispose ();
 				testTableView = null;
 			}
 
-			if (notesTableView != null) {
-				notesTableView.Dispose ();
-				notesTableView = null;
+			if (innerScrollView != null) {
+				innerScrollView.Dispose ();
+				innerScrollView = null;
 			}
 		}
 	}

@@ -436,6 +436,7 @@
                         <outlet property="emptyNotesImageView" destination="X09-dg-vjD" id="1tr-SD-KaA"/>
                         <outlet property="emptyNotesLabel" destination="ive-dS-syl" id="tke-Vt-NVo"/>
                         <outlet property="emptyNotesView" destination="UD3-ji-Gyu" id="Sej-VF-L5f"/>
+                        <outlet property="innerScrollView" destination="CWw-Oa-QsM" id="VTs-n3-oSW"/>
                         <outlet property="notesTableView" destination="DJ5-d6-SMk" id="WFg-sb-14p"/>
                     </connections>
                 </viewController>
@@ -556,6 +557,7 @@
                     </view>
                     <connections>
                         <outlet property="createNoteBackgroundView" destination="xny-ZC-Nph" id="umc-6R-rt0"/>
+                        <outlet property="innerScrollView" destination="PJb-eU-HJ3" id="1RY-3I-SIH"/>
                         <outlet property="noteLabel" destination="Iar-IL-YDm" id="eED-s9-TkK"/>
                         <outlet property="noteTextView" destination="Zlx-9s-W8n" id="YAt-j7-mHq"/>
                         <outlet property="noteTitleLabel" destination="HcV-mG-Au7" id="ifh-UT-NNb"/>
