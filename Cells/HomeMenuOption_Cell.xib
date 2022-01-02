@@ -25,19 +25,19 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fT-yu-L6y">
-                        <rect key="frame" x="299" y="7" width="58" height="70"/>
+                        <rect key="frame" x="339" y="17" width="38" height="53"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="58" id="jLi-dR-PeX"/>
+                            <constraint firstAttribute="width" constant="38" id="HjC-7g-3cJ"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="7fT-yu-L6y" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="7" id="7cc-FC-Hj2"/>
                     <constraint firstItem="BlM-nb-j19" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="24" id="7uL-ak-kRD"/>
                     <constraint firstAttribute="bottom" secondItem="BlM-nb-j19" secondAttribute="bottom" constant="24" id="Me5-Mt-nLg"/>
-                    <constraint firstAttribute="trailing" secondItem="7fT-yu-L6y" secondAttribute="trailing" constant="63" id="St2-yN-uio"/>
-                    <constraint firstAttribute="bottom" secondItem="7fT-yu-L6y" secondAttribute="bottom" constant="9" id="aNP-AW-GI5"/>
+                    <constraint firstAttribute="trailing" secondItem="7fT-yu-L6y" secondAttribute="trailing" constant="43" id="e3Q-TH-YfK"/>
+                    <constraint firstItem="7fT-yu-L6y" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="17" id="eoy-PE-52Y"/>
+                    <constraint firstAttribute="bottom" secondItem="7fT-yu-L6y" secondAttribute="bottom" constant="16" id="g2L-28-LtO"/>
                     <constraint firstItem="BlM-nb-j19" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="20" id="gpy-06-Zqq"/>
                 </constraints>
             </tableViewCellContentView>
