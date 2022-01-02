@@ -51,8 +51,12 @@ namespace CyberThink.Cells
         public void SetUpModuleCompletionView()
         {
             ModuleCompletionView.Layer.BackgroundColor = UIColor.Red.CGColor;
-            ModuleCompletionView.Layer.CornerRadius = 100;
-            ModuleCompletionView.ClipsToBounds = false;
+            ModuleCompletionView.ClipsToBounds = true;
+            ModuleCompletionView.Layer.MasksToBounds = true;
+            ModuleCompletionView.Layer.CornerRadius = (nfloat)0.5 * ModuleCompletionView.Bounds.Size.Width;
+            
+
+
 
         }
 

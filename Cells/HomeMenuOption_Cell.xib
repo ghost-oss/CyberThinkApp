@@ -25,10 +25,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fT-yu-L6y">
-                        <rect key="frame" x="299" y="7" width="94" height="70"/>
+                        <rect key="frame" x="299" y="7" width="58" height="70"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="94" id="eSt-UQ-BBq"/>
+                            <constraint firstAttribute="width" constant="58" id="jLi-dR-PeX"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -36,7 +36,7 @@
                     <constraint firstItem="7fT-yu-L6y" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="7" id="7cc-FC-Hj2"/>
                     <constraint firstItem="BlM-nb-j19" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="24" id="7uL-ak-kRD"/>
                     <constraint firstAttribute="bottom" secondItem="BlM-nb-j19" secondAttribute="bottom" constant="24" id="Me5-Mt-nLg"/>
-                    <constraint firstAttribute="trailing" secondItem="7fT-yu-L6y" secondAttribute="trailing" constant="27" id="TZZ-5c-e3Q"/>
+                    <constraint firstAttribute="trailing" secondItem="7fT-yu-L6y" secondAttribute="trailing" constant="63" id="St2-yN-uio"/>
                     <constraint firstAttribute="bottom" secondItem="7fT-yu-L6y" secondAttribute="bottom" constant="9" id="aNP-AW-GI5"/>
                     <constraint firstItem="BlM-nb-j19" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="20" id="gpy-06-Zqq"/>
                 </constraints>
