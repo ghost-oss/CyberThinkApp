@@ -1,11 +1,12 @@
 using System;
-using System.Collections.Generic;
+using CyberThink.Helpers;
 using CyberThink.Model;
 using CyberThink.ViewModel;
 using CyberThink.Cells;
 using Foundation;
 using UIKit;
 using ObjCRuntime;
+using CoreGraphics;
 
 namespace CyberThink
 {
@@ -18,12 +19,14 @@ namespace CyberThink
         private Quiz_ViewModel quizViewModel;
         private int questionIndex;
         private int scoreTracker;
+        private Answer_Cell cell;
 
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
             quizViewModel = new Quiz_ViewModel();
             this.BeginQuiz(); // Called once to set index to 0 and we don't want to keep resetting this on viewwillappear as the question - answers go out of sync
+            this.SetUpUI();
         }
 
         public override void ViewWillAppear(bool animated)
@@ -39,18 +42,34 @@ namespace CyberThink
              currentQuestionIndex += 1;
 
             //Title                                 
-            questionProgressTitle.Text = $"Question {currentQuestionIndex} out of {quizViewModel.questions.Count}";
+            questionProgressTitle.Text = $"Question {currentQuestionIndex} out of {quizViewModel.questions.Count}:";
 
             //ProgressBar
             float progress = currentQuestionIndex / quizViewModel.questions.Count;
-            questionProgressBar.SetProgress(progress, true);
+            questionProgressBar.SetProgress(progress, true);         
         }
 
         public void SetUpTableView()
         {
+            answerTable.TableFooterView = new UIView();
             answerTable.BackgroundColor = UIColor.Clear;
             answerTable.Delegate = this;
             answerTable.DataSource = this;
+            answerTable.RowHeight = UITableView.AutomaticDimension;
+            answerTable.EstimatedRowHeight = 100f;
+        }
+
+        public void SetUpUI()
+        {
+            this.View.BackgroundColor = UIColor.FromRGB(0, 76, 153);
+
+            questionProgressBar.Transform = CGAffineTransform.MakeScale(1, 5);
+            questionProgressBar.ProgressTintColor = UIColor.Yellow;
+            questionProgressBar.TrackTintColor = UIColor.White;
+            questionProgressBar.Layer.CornerRadius = 3;
+
+            questionProgressTitle.TextColor = UIColor.White;
+            UserInterface.LabelDesigner(questionProgressTitle, 20);
         }
 
         public void BeginQuiz()
@@ -64,30 +83,26 @@ namespace CyberThink
             //Lines + SizeToFit() allow us to align text left-top and resize acording to text length
             question.Lines = 0;
             question.SizeToFit();
+            question.LineBreakMode = UILineBreakMode.WordWrap;
             question.Text = currentQuestion.question;
+            question.Font = UIFont.BoldSystemFontOfSize(20);
+            question.TextColor = UIColor.White;
         }
 
         public UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
-            var cell = tableView.DequeueReusableCell(Answer_Cell.Key) as Answer_Cell;
+            cell = tableView.DequeueReusableCell(Answer_Cell.Key) as Answer_Cell;
             var view = NSBundle.MainBundle.LoadNib(Answer_Cell.Key, cell, null);
             cell = Runtime.GetNSObject(view.ValueAt(0)) as Answer_Cell;
 
             Answer answerOption = quizViewModel?.questions[questionIndex]?.answers[indexPath.Row];
             cell.BindDataToCell(answerOption.answer);
-
             return cell;
         }
 
         public nint RowsInSection(UITableView tableView, nint section)
         {
             return quizViewModel.questions[questionIndex].answers.Count;
-        }
-
-        [Export("tableView:heightForRowAtIndexPath:")]
-        public nfloat GetHeightForRow(UITableView tableView, NSIndexPath indexPath)
-        {
-            return 80;
         }
 
         [Export("tableView:didSelectRowAtIndexPath:")]
@@ -120,10 +135,5 @@ namespace CyberThink
         }
 
     }
-
-
     
 }
-
-
-//Skip feature may also be added

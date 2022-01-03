@@ -35,8 +35,6 @@ namespace CyberThink
             this.View.BackgroundColor = UIColor.FromRGB(0,76,153);
             this.innerViewForScroll.BackgroundColor = UIColor.FromRGB(0, 76, 153);
             home_ViewModel = new Home_ViewModel();
-
-
         }
 
         public override void ViewDidAppear(bool animated)
@@ -197,21 +195,6 @@ namespace CyberThink
             var vc = storyBoard?.InstantiateViewController("Quiz_ViewController");
             this.NavigationController.PushViewController(vc, true);
         }
-
-
-        //public async void test()
-        //{
-            
-        //    await BlobCache.UserAccount.InsertObject("modules", home_ViewModel.beginnerModules);
-        //    // Or without async/await:
-        //    //myRevisionNotes = await BlobCache.UserAccount.GetObject<revisionNotes>("revisionNotes").Catch(Observable.Return(new revisionNotes()));
-
-
-        //    var lst = await BlobCache.UserAccount.GetObject<List<Module>>("beginnerModules");
-
-
-        
-        //}
 
     }
 
