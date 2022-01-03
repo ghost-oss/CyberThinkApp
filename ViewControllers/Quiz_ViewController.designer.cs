@@ -23,17 +23,15 @@ namespace CyberThink
 
 		[Outlet]
 		UIKit.UILabel questionProgressTitle { get; set; }
+
+		[Outlet]
+		UIKit.UIScrollView scrollView { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (questionProgressTitle != null) {
-				questionProgressTitle.Dispose ();
-				questionProgressTitle = null;
-			}
-
-			if (questionProgressBar != null) {
-				questionProgressBar.Dispose ();
-				questionProgressBar = null;
+			if (answerTable != null) {
+				answerTable.Dispose ();
+				answerTable = null;
 			}
 
 			if (question != null) {
@@ -41,9 +39,19 @@ namespace CyberThink
 				question = null;
 			}
 
-			if (answerTable != null) {
-				answerTable.Dispose ();
-				answerTable = null;
+			if (questionProgressBar != null) {
+				questionProgressBar.Dispose ();
+				questionProgressBar = null;
+			}
+
+			if (questionProgressTitle != null) {
+				questionProgressTitle.Dispose ();
+				questionProgressTitle = null;
+			}
+
+			if (scrollView != null) {
+				scrollView.Dispose ();
+				scrollView = null;
 			}
 		}
 	}

@@ -13,6 +13,9 @@ namespace CyberThink
 	partial class QuizResult_ViewController
 	{
 		[Outlet]
+		UIKit.UIView innerScrollView { get; set; }
+
+		[Outlet]
 		UIKit.UIView quizResultBackgroundView { get; set; }
 
 		[Outlet]
@@ -29,6 +32,11 @@ namespace CyberThink
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (innerScrollView != null) {
+				innerScrollView.Dispose ();
+				innerScrollView = null;
+			}
+
 			if (quizResultBackgroundView != null) {
 				quizResultBackgroundView.Dispose ();
 				quizResultBackgroundView = null;

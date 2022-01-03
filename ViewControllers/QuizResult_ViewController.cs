@@ -33,8 +33,9 @@ namespace CyberThink
         public void SetUpUI()
         {
             UserInterface.BackgroundDesigner(quizResultBackgroundView);
+            this.View.BackgroundColor = UIColor.FromRGB(0, 76, 153);
+            innerScrollView.BackgroundColor = UIColor.FromRGB(0, 76, 153);
 
-            
         }
 
         public void SetUpBackToHomeButton()
@@ -42,6 +43,9 @@ namespace CyberThink
             UserInterface.ButtonDesigner(quizResultReturnToHomeButton, true);
             UserInterface.ButtonFontDesigner(quizResultReturnToHomeButton);
             quizResultReturnToHomeButton.SetTitle("Back to home", UIControlState.Normal);
+            quizResultReturnToHomeButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+            quizResultReturnToHomeButton.Layer.ShadowColor = UIColor.White.CGColor;
+            quizResultReturnToHomeButton.Layer.BorderColor = UIColor.White.CGColor;
 
             quizResultReturnToHomeButton.TouchUpInside += quizReturnToHomeTouchDown;
 

@@ -119,6 +119,7 @@ namespace CyberThink
 
                 answerTable.ReloadData();
                 this.View.ReloadInputViews();
+                scrollView.ContentOffset = new CGPoint(0,0);
             }
             else
             {
