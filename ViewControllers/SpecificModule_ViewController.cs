@@ -19,20 +19,26 @@ namespace CyberThink
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            this.View.BackgroundColor = UIColor.FromRGB(204,229,255);
+            backgroundView.BackgroundColor = UIColor.FromRGB(204, 229, 255);
         }
 
         public override void ViewWillAppear(bool animated)
         {
             moduleTitle.Text = temporaryTitle;
             moduleTitle.TextAlignment = UITextAlignment.Center;
-            moduleTitle.Font = UIFont.BoldSystemFontOfSize(20);
+            moduleTitle.Font = UIFont.BoldSystemFontOfSize(22);
+            var attrString = new NSMutableAttributedString(moduleTitle.Text);
+            attrString.AddAttribute(UIStringAttributeKey.UnderlineStyle, NSNumber.FromInt32((int)NSUnderlineStyle.Single), new NSRange(0, attrString.Length));
+
+            moduleTitle.AttributedText = attrString;
 
             //Lines + SizeToFit() allow us to align text left-top and resize acording to text length
             moduleInformation.Lines = 0;
             moduleInformation.SizeToFit();
             moduleInformation.LineBreakMode = UILineBreakMode.WordWrap;
             moduleInformation.Text = temporaryInformation;
-            moduleInformation.Font = UIFont.SystemFontOfSize(18, UIFontWeight.Regular);
+            moduleInformation.Font = UIFont.SystemFontOfSize(20, UIFontWeight.Regular);
         }
 
         public override void ViewDidAppear(bool animated)

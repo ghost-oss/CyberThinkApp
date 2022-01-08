@@ -803,10 +803,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N95-wv-PN9">
-                                                <rect key="frame" x="77" y="55" width="260" height="49"/>
+                                                <rect key="frame" x="29" y="55" width="355" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="65d-sU-3IZ"/>
-                                                    <constraint firstAttribute="width" constant="260" id="vJR-Hp-KPg"/>
+                                                    <constraint firstAttribute="width" constant="355" id="k3j-1i-wUy"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -816,12 +816,12 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="830" id="8wG-UF-rxb"/>
+                                            <constraint firstItem="N95-wv-PN9" firstAttribute="leading" secondItem="19l-aa-DQs" secondAttribute="leading" constant="29" id="Bad-8e-Izv"/>
                                             <constraint firstItem="OSW-FP-WSw" firstAttribute="top" secondItem="N95-wv-PN9" secondAttribute="bottom" constant="31" id="Ko1-p8-WJn"/>
                                             <constraint firstAttribute="trailing" secondItem="OSW-FP-WSw" secondAttribute="trailing" constant="30" id="QJE-tJ-WrF"/>
-                                            <constraint firstItem="N95-wv-PN9" firstAttribute="leading" secondItem="19l-aa-DQs" secondAttribute="leading" constant="77" id="Up1-pw-AdM"/>
                                             <constraint firstItem="N95-wv-PN9" firstAttribute="top" secondItem="19l-aa-DQs" secondAttribute="top" constant="55" id="bdO-M0-UC2"/>
                                             <constraint firstItem="OSW-FP-WSw" firstAttribute="leading" secondItem="19l-aa-DQs" secondAttribute="leading" constant="29" id="lRD-Rx-FZs"/>
-                                            <constraint firstAttribute="trailing" secondItem="N95-wv-PN9" secondAttribute="trailing" constant="77" id="nA6-Wc-FLK"/>
+                                            <constraint firstAttribute="trailing" secondItem="N95-wv-PN9" secondAttribute="trailing" constant="30" id="pNC-gc-cse"/>
                                         </constraints>
                                     </view>
                                 </subviews>

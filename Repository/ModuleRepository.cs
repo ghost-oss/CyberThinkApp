@@ -28,9 +28,9 @@ namespace CyberThink.Repository
             passwordeModulesList.Add(new Module()
             {
                 moduleName = "Password Attacks",
-                moduleInformation = "Brute-Force Attack\n" +
+                moduleInformation = "Brute-Force Attack:\n" +
                 "A brute-force is a type of attack whereby every permutation of a password is tested against a password protected system. An attacker may tailor the attack such as specificizing only attempting numbers or simply words. Once the attack is initiated, it is only constrained by the computational power of the adversary, and multiple attempts are made to breach the user’s account\n\n" +
-                "Dictionary attacks:\n" +
+                "Dictionary Attacks:\n" +
                 "This technique uses trial-and-error to guess valid user credentials. An attacker may submit a list of commonly used words, namely usernames and passwords with the intention of getting a correct match.\n\n" +
                 "Most dictionary attacks are executed by deploying some automated software which allows vast quantities of passwords to be fed into the system. Common passwords include: password123, 123456, letmein, batman and others.\n\n" +
                 "Shoulder Surfing:\n" +
