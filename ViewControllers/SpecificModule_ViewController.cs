@@ -22,13 +22,6 @@ namespace CyberThink
             base.ViewDidLoad();
             this.View.BackgroundColor = UIColor.FromRGB(204,229,255);
             backgroundView.BackgroundColor = UIColor.FromRGB(204, 229, 255);
-            this.AddImage();
-
-        }
-
-        public void AddImage()
-        {
-
         }
 
         public override void ViewWillAppear(bool animated)
