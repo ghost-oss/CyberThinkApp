@@ -246,7 +246,7 @@ namespace CyberThink
         public void ModuleSelected(Module moduleObj)
         {
             var vc = Storyboard?.InstantiateViewController("SpecificModule_ViewController") as SpecificModule_ViewController; //FYI 'as' is type casting so we can access the VC's methods
-            vc.BindData(moduleObj.moduleName, moduleObj.moduleInformation);
+            vc.BindData(moduleObj.moduleName, moduleObj.moduleInformation, moduleObj.imagePath);
             this.NavigationController.PresentModalViewController(vc,true);
         }
 

@@ -19,10 +19,11 @@ namespace CyberThink.Repository
             passwordeModulesList = new List<Module>();
             passwordeModulesList.Add(new Module()
             {
-                moduleName = "Password Overview",
+                moduleName = "Password Security Overview",
                 moduleInformation = "A password is simply the most convenient (and easiest) way to protect our devices. It is a means by which a user proves they are authorised to use a device. Great, it’s secure…but how secure is it? The modules going forward will consolidate your understanding on how weak passwords can be exploited and how you can implement secure passwords!\n\n" +
                 "With modern technology, computing devices connect and share information around the globe, and they may also connect with financial transactions. These devices are all vulnerable to unauthorised users. The consequences of the victims or organisations who encounter a break-in may include financial loss, loss of reputability or even personal records. It is crucial that passwords are securely managed, contain some complexity and is difficult for an adversary to guess.\n\n",
-                isComplete = false
+                isComplete = false,
+                imagePath = "passwordlock"
             });
 
             passwordeModulesList.Add(new Module()
@@ -66,11 +67,12 @@ namespace CyberThink.Repository
             phishingModulesList = new List<Module>();
             phishingModulesList.Add(new Module()
             {
-                moduleName = "Introduction",
+                moduleName = "Phishing Overview",
                 moduleInformation = "Phishing attacks are a subsidiary of social engineering attack, and they consist of various targets depending on the adversary. Attackers may mask themselves as a legitimate representative to gain further information, often leading to theft of identity or notable financial loss.\n\n" +
                 "This type of cyber-attack may utilise technology such as email, mobile device, or text messages to lure individuals into releasing confidential information. The information could range from passwords, credit card numbers, national security numbers or even details about the individual or organisation. \n\n" +
                 "The following modules will give you an understanding of the different type of phishing techniques an attacker may use against you and how you can protect yourself from phishing attacks within a workplace.\n\n",
-                isComplete = false
+                isComplete = false,
+                imagePath = "phishing"
             });
 
             phishingModulesList.Add(new Module()
@@ -116,11 +118,12 @@ namespace CyberThink.Repository
             physicalModulesList = new List<Module>();
             physicalModulesList.Add(new Module()
             {
-                moduleName = "Overview",
+                moduleName = "Physical Security Overview",
                 moduleInformation = "Not all cyber threats begin within the digital realm, and it is imperative to understand they can begin within your physical workspace. An adversary may physically access your workplace or potentially performing actions to gain access to unauthorised areas. They may continue to then leverage their situation and extract large pieces of information and utilise it to support future cyber-attacks.\n\n" +
                 "Physical security is imperative for an organization as it protects and safeguards company personnel, data and physical hardware from adversaries who could damage and disrupt the operations with a business. It ensures that physical properties are protected from threats such as theft, damage and even modifications.\n\n" +
                 "The following modules will consolidate your understanding on secure workplace hygiene, physical tailgating, and how an attacker could potentially exploit these vectors.\n\n",
-                isComplete = false
+                isComplete = false,
+                imagePath = "physicalsecurity"
             });
 
             physicalModulesList.Add(new Module()

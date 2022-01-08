@@ -6,5 +6,6 @@ namespace CyberThink.Model
         public string moduleName;
         public string moduleInformation;
         public bool isComplete;
+        public string imagePath;
     }
 }

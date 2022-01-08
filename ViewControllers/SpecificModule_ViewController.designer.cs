@@ -22,13 +22,27 @@ namespace CyberThink
 		UIKit.NSLayoutConstraint moduleInformationHeightConstraint { get; set; }
 
 		[Outlet]
+		UIKit.NSLayoutConstraint moduleInformationTopConstraint { get; set; }
+
+		[Outlet]
 		UIKit.UILabel moduleTitle { get; set; }
+
+		[Outlet]
+		UIKit.NSLayoutConstraint specificImageHeight { get; set; }
+
+		[Outlet]
+		UIKit.UIImageView specificImageView { get; set; }
 
 		[Outlet]
 		UIKit.NSLayoutConstraint viewForScrollHeightConstraint { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (backgroundView != null) {
+				backgroundView.Dispose ();
+				backgroundView = null;
+			}
+
 			if (moduleInformation != null) {
 				moduleInformation.Dispose ();
 				moduleInformation = null;
@@ -44,14 +58,24 @@ namespace CyberThink
 				moduleTitle = null;
 			}
 
+			if (specificImageHeight != null) {
+				specificImageHeight.Dispose ();
+				specificImageHeight = null;
+			}
+
+			if (specificImageView != null) {
+				specificImageView.Dispose ();
+				specificImageView = null;
+			}
+
 			if (viewForScrollHeightConstraint != null) {
 				viewForScrollHeightConstraint.Dispose ();
 				viewForScrollHeightConstraint = null;
 			}
 
-			if (backgroundView != null) {
-				backgroundView.Dispose ();
-				backgroundView = null;
+			if (moduleInformationTopConstraint != null) {
+				moduleInformationTopConstraint.Dispose ();
+				moduleInformationTopConstraint = null;
 			}
 		}
 	}

@@ -15,12 +15,20 @@ namespace CyberThink
 
         string temporaryTitle;
         string temporaryInformation;
+        string temporaryImagePath;
 
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
             this.View.BackgroundColor = UIColor.FromRGB(204,229,255);
             backgroundView.BackgroundColor = UIColor.FromRGB(204, 229, 255);
+            this.AddImage();
+
+        }
+
+        public void AddImage()
+        {
+
         }
 
         public override void ViewWillAppear(bool animated)
@@ -32,13 +40,14 @@ namespace CyberThink
             attrString.AddAttribute(UIStringAttributeKey.UnderlineStyle, NSNumber.FromInt32((int)NSUnderlineStyle.Single), new NSRange(0, attrString.Length));
 
             moduleTitle.AttributedText = attrString;
-
             //Lines + SizeToFit() allow us to align text left-top and resize acording to text length
             moduleInformation.Lines = 0;
             moduleInformation.SizeToFit();
             moduleInformation.LineBreakMode = UILineBreakMode.WordWrap;
             moduleInformation.Text = temporaryInformation;
             moduleInformation.Font = UIFont.SystemFontOfSize(20, UIFontWeight.Regular);
+
+            this.LoadImage(temporaryImagePath);
         }
 
         public override void ViewDidAppear(bool animated)
@@ -53,16 +62,34 @@ namespace CyberThink
             AdjustScrollViewHeight();
         }
 
-        public void BindData(string title, string information)
+        public void BindData(string title, string information, string imagePath)
         {
             temporaryTitle = title;
             temporaryInformation = information;
+            temporaryImagePath = imagePath;
+            
+            
+        }
+
+        public void LoadImage(string imagePath)
+        {
+            if (!string.IsNullOrEmpty(imagePath))
+            {
+                var sourceImage = UIImage.FromBundle(imagePath);
+                specificImageView.ContentMode = UIViewContentMode.ScaleAspectFit;
+                specificImageView.Image = sourceImage;
+            }
+            else
+            {
+                specificImageHeight.Constant = 0;
+                moduleInformationTopConstraint.Constant = 0; //Constraint which links with the bottom image
+            }
         }
 
         public void AdjustScrollViewHeight()
         {
             var moduleInformationHeight = moduleInformation.Frame.Height;
-            viewForScrollHeightConstraint.Constant = moduleInformationHeight + 100;
+            viewForScrollHeightConstraint.Constant = moduleInformationHeight + specificImageHeight.Constant + 105;
         }
     }
 }
