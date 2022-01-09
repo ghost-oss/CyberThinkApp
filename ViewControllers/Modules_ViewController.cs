@@ -27,9 +27,7 @@ namespace CyberThink
             this.SetUpEventHadlers();
             this.SetUpTableViewsAndButtons();
             this.SetUpButtons();
-
-            this.View.BackgroundColor = UIColor.FromRGB(0, 76, 153);
-            modulesBackgroundView.Layer.BackgroundColor = UIColor.FromRGB(0, 76, 153).CGColor;
+            this.SetUpUI();
         }
 
         public override void ViewDidAppear(bool animated)
@@ -50,6 +48,15 @@ namespace CyberThink
             passwordModulesTableViewHeightConstraint.Constant = 0;
             physicalModulesTableViewHeightConstraint.Constant = 0;
             scrollView.ContentOffset = new CGPoint(0,0);
+        }
+
+        public void SetUpUI()
+        {
+            this.View.BackgroundColor = UIColor.FromRGB(0, 76, 153);
+            modulesBackgroundView.Layer.BackgroundColor = UIColor.FromRGB(0, 76, 153).CGColor;
+            this.NavigationController.NavigationBar.BarStyle = UIBarStyle.BlackOpaque;
+            NavigationController.NavigationBar.TopItem.Title = "Learning Modules";
+            this.NavigationController.NavigationBar.TitleTextAttributes = new UIStringAttributes { ForegroundColor = UIColor.White, Font = UIFont.BoldSystemFontOfSize(20)};
         }
 
         public void SetUpTableViewsAndButtons()

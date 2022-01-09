@@ -220,6 +220,10 @@
         </Compile>
         <Compile Include="DatabaseConnection\FirebaseConnection.cs" />
         <Compile Include="Service\CacheService.cs" />
+        <Compile Include="ViewControllers\SpecificNote_ViewController.cs" />
+        <Compile Include="ViewControllers\SpecificNote_ViewController.designer.cs">
+          <DependentUpon>SpecificNote_ViewController.cs</DependentUpon>
+        </Compile>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

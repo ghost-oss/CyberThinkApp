@@ -20,8 +20,16 @@ namespace CyberThink
             this.SetUpBackgrounds();
             this.SetUpCreateNoteLabels();
             this.SetUpSaveNoteButton();
+            this.SetUpNavigationBar();
             createNotesViewModel = new CreateNote_ViewModel();
-            this.View.BackgroundColor = UIColor.FromRGB(0, 76, 153);
+            this.View.BackgroundColor = UIColor.FromRGB(0, 76, 153);       
+        }
+
+        public void SetUpNavigationBar()
+        {
+            NavigationController.NavigationBar.TopItem.BackBarButtonItem = new UIBarButtonItem("My Notes", UIBarButtonItemStyle.Done, null);
+            NavigationController.NavigationBar.TopItem.BackBarButtonItem.TintColor = UIColor.White;
+            NavigationController.NavigationBar.TopItem.BackBarButtonItem.SetTitleTextAttributes(new UITextAttributes { Font = UIFont.BoldSystemFontOfSize(20) }, UIControlState.Normal);
         }
 
         public override void ViewWillAppear(bool animated)

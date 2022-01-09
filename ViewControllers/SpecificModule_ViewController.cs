@@ -31,8 +31,8 @@ namespace CyberThink
             moduleTitle.Font = UIFont.BoldSystemFontOfSize(22);
             var attrString = new NSMutableAttributedString(moduleTitle.Text);
             attrString.AddAttribute(UIStringAttributeKey.UnderlineStyle, NSNumber.FromInt32((int)NSUnderlineStyle.Single), new NSRange(0, attrString.Length));
-
             moduleTitle.AttributedText = attrString;
+
             //Lines + SizeToFit() allow us to align text left-top and resize acording to text length
             moduleInformation.Lines = 0;
             moduleInformation.SizeToFit();

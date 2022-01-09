@@ -26,9 +26,15 @@ namespace CyberThink
             this.SetUpToolBar();
             notesTableView.Delegate = this;
             notesTableView.DataSource = this;
+            this.SetUpUI();
+        }
+
+        public void SetUpUI()
+        {
             this.View.BackgroundColor = UIColor.FromRGB(0, 76, 153);
             notesTableView.BackgroundColor = UIColor.FromRGB(0, 76, 153);
-
+            innerScrollView.BackgroundColor = UIColor.FromRGB(0, 76, 153);
+            emptyNotesView.BackgroundColor = UIColor.FromRGB(0, 76, 153);
         }
 
         public override void ViewWillAppear(bool animated)
@@ -39,9 +45,16 @@ namespace CyberThink
            
         }
 
-
         public void ToggleEmptyNotesView()
         {
+            emptyNotesLabel.Text = "You Have Empty Notes";
+            emptyNotesLabel.TextAlignment = UITextAlignment.Center;
+            emptyNotesLabel.Font = UIFont.BoldSystemFontOfSize(22);
+            emptyNotesLabel.TextColor = UIColor.White;
+            var attrString = new NSMutableAttributedString(emptyNotesLabel.Text);
+            attrString.AddAttribute(UIStringAttributeKey.UnderlineStyle, NSNumber.FromInt32((int)NSUnderlineStyle.Single), new NSRange(0, attrString.Length));
+            emptyNotesLabel.AttributedText = attrString;
+
 
             if (noteListViewModel.noteList.Count == 0)
             {
@@ -68,10 +81,13 @@ namespace CyberThink
             var addNotesItem = new UIBarButtonItem();
             addNotesItem.Title = "Add Note";
             addNotesItem.Clicked += NewNotesClicked;
+            addNotesItem.TintColor = UIColor.White;
+            addNotesItem.SetTitleTextAttributes(new UITextAttributes { Font = UIFont.BoldSystemFontOfSize(20) }, UIControlState.Normal);
 
             NavigationController.NavigationBar.TopItem.RightBarButtonItem = addNotesItem;
-
             NavigationController.NavigationBar.TopItem.Title = "My Notes";
+            this.NavigationController.NavigationBar.BarStyle = UIBarStyle.BlackOpaque;
+            this.NavigationController.NavigationBar.TitleTextAttributes = new UIStringAttributes { ForegroundColor = UIColor.White, Font = UIFont.BoldSystemFontOfSize(20) };
 
         }
 
@@ -122,10 +138,22 @@ namespace CyberThink
 
                     NSIndexPath[] path = { indexPath }; //Nice animation to delete the row
                     tableView.DeleteRows(path, UITableViewRowAnimation.Fade);
+                    this.ToggleEmptyNotesView();
 
                 });
-            
+
             return new UITableViewRowAction[] { deleteModule };
+
+        }
+
+        [Export("tableView:didSelectRowAtIndexPath:")]
+        public void RowSelected(UITableView tableView, NSIndexPath indexPath)
+        {
+            var note = noteListViewModel.noteList[indexPath.Row];
+            var vc = Storyboard.InstantiateViewController("SpecificNote_ViewController") as SpecificNote_ViewController;
+            vc.BindData(note);
+            this.NavigationController.PresentModalViewController(vc, true);
+
         }
     }
 }
