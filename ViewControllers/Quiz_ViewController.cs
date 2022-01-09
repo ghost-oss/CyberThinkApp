@@ -70,6 +70,10 @@ namespace CyberThink
 
             questionProgressTitle.TextColor = UIColor.White;
             UserInterface.LabelDesigner(questionProgressTitle, 20);
+
+            NavigationController.NavigationBar.TopItem.BackBarButtonItem = new UIBarButtonItem("Home", UIBarButtonItemStyle.Done, null);
+            NavigationController.NavigationBar.TopItem.BackBarButtonItem.TintColor = UIColor.White;
+            NavigationController.NavigationBar.TopItem.BackBarButtonItem.SetTitleTextAttributes(new UITextAttributes { Font = UIFont.BoldSystemFontOfSize(20) }, UIControlState.Normal);
         }
 
         public void BeginQuiz()
