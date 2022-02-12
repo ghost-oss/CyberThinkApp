@@ -109,7 +109,7 @@ namespace CyberThink
             //var regex = new Regex("[^a-zA-Z0-9 _.,!()]");
             //regex.Replace(input, string.Empty);
 
-            var sanitizedStr = Regex.Replace(input, @"[^\w\d\.@!%*&$+='{}\()\[\].?: -]", "");
+            var sanitizedStr = Regex.Replace(input, @"[^\w\d\s\s.@!%*&$+=/'{}\()\[\].?: -]", "");
 
             if (string.IsNullOrEmpty(sanitizedStr) && !string.Equals(sanitizedStr, input))
             {
