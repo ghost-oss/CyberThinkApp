@@ -276,7 +276,7 @@
                     <connections>
                         <outlet property="innerScrollView" destination="grn-k2-iU3" id="ChU-qj-RFT"/>
                         <outlet property="innerScrollViewHeightConstraint" destination="TkU-Xr-akW" id="O7l-PD-AfI"/>
-                        <outlet property="specifcNoteLeftConstraint" destination="1sW-TK-Edp" id="XUa-5X-RPA"/>
+                        <outlet property="specifcNoteInformationLeftConstraint" destination="1sW-TK-Edp" id="ILo-ca-j4E"/>
                         <outlet property="specifcNoteTitle" destination="6vb-ck-cYI" id="evR-YZ-V9L"/>
                         <outlet property="specificNoteInformation" destination="wPY-Yi-oEV" id="tLD-QO-Ehe"/>
                     </connections>

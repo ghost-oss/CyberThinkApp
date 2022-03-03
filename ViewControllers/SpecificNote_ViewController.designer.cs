@@ -19,6 +19,9 @@ namespace CyberThink
 		UIKit.NSLayoutConstraint innerScrollViewHeightConstraint { get; set; }
 
 		[Outlet]
+		UIKit.NSLayoutConstraint specifcNoteInformationLeftConstraint { get; set; }
+
+		[Outlet]
 		UIKit.UILabel specifcNoteTitle { get; set; }
 
 		[Outlet]
@@ -26,6 +29,16 @@ namespace CyberThink
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (innerScrollView != null) {
+				innerScrollView.Dispose ();
+				innerScrollView = null;
+			}
+
+			if (innerScrollViewHeightConstraint != null) {
+				innerScrollViewHeightConstraint.Dispose ();
+				innerScrollViewHeightConstraint = null;
+			}
+
 			if (specifcNoteTitle != null) {
 				specifcNoteTitle.Dispose ();
 				specifcNoteTitle = null;
@@ -36,14 +49,9 @@ namespace CyberThink
 				specificNoteInformation = null;
 			}
 
-			if (innerScrollView != null) {
-				innerScrollView.Dispose ();
-				innerScrollView = null;
-			}
-
-			if (innerScrollViewHeightConstraint != null) {
-				innerScrollViewHeightConstraint.Dispose ();
-				innerScrollViewHeightConstraint = null;
+			if (specifcNoteInformationLeftConstraint != null) {
+				specifcNoteInformationLeftConstraint.Dispose ();
+				specifcNoteInformationLeftConstraint = null;
 			}
 		}
 	}

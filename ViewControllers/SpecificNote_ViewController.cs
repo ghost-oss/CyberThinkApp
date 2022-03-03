@@ -1,4 +1,5 @@
 using System;
+using CoreGraphics;
 using CyberThink.Model;
 using Foundation;
 using UIKit;
@@ -12,8 +13,9 @@ namespace CyberThink
 		}
 
         private Note usernote;
+        private bool isLandscape => UIApplication.SharedApplication.StatusBarOrientation == UIInterfaceOrientation.LandscapeLeft || UIApplication.SharedApplication.StatusBarOrientation == UIInterfaceOrientation.LandscapeRight;
 
-		public SpecificNote_ViewController()
+        public SpecificNote_ViewController()
         {
 
         }
@@ -21,6 +23,7 @@ namespace CyberThink
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            this.AdjustConstraintsForLandscape();
 
             this.View.BackgroundColor = UIColor.FromRGB(204, 229, 255);
             innerScrollView.BackgroundColor = UIColor.FromRGB(204, 229, 255);
@@ -55,6 +58,23 @@ namespace CyberThink
         public void BindData(Note note)
         {
             usernote = note;
+        }
+
+        public override void ViewWillTransitionToSize(CGSize toSize, IUIViewControllerTransitionCoordinator coordinator)
+        {
+            this.AdjustConstraintsForLandscape();
+        }
+
+        public void AdjustConstraintsForLandscape()
+        {
+            if (isLandscape)
+            {
+                specifcNoteInformationLeftConstraint.Constant = 40;
+            }
+            else
+            {
+                specifcNoteInformationLeftConstraint.Constant = 31;
+            }
         }
 
         public void AdjustScrollViewHeight()
