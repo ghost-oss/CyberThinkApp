@@ -167,15 +167,7 @@
         <Compile Include="TabBarController.designer.cs">
           <DependentUpon>TabBarController.cs</DependentUpon>
         </Compile>
-        <Compile Include="TestViewController.cs" />
-        <Compile Include="TestViewController.designer.cs">
-          <DependentUpon>TestViewController.cs</DependentUpon>
-        </Compile>
         <Compile Include="Helpers\ViewAnimations.cs" />
-        <Compile Include="ScrollViewTest.cs" />
-        <Compile Include="ScrollViewTest.designer.cs">
-          <DependentUpon>ScrollViewTest.cs</DependentUpon>
-        </Compile>
         <Compile Include="Model \Module.cs" />
         <Compile Include="ViewModel\Module_ViewModel.cs" />
         <Compile Include="Repository\ModuleRepository.cs" />
@@ -210,10 +202,6 @@
         <Compile Include="Model \Note.cs" />
         <Compile Include="ViewModel\CreateNote_ViewModel.cs" />
         <Compile Include="ViewModel\NotesList_ViewModel.cs" />
-        <Compile Include="Notes_ViewController.cs" />
-        <Compile Include="Notes_ViewController.designer.cs">
-          <DependentUpon>Notes_ViewController.cs</DependentUpon>
-        </Compile>
         <Compile Include="Cells\Note_Cell.cs" />
         <Compile Include="Cells\Note_Cell.designer.cs">
           <DependentUpon>Note_Cell.cs</DependentUpon>
