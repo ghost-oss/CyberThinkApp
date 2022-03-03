@@ -1140,6 +1140,264 @@ Function=BrotliEncoderDestroyInstance
 	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/System.IO.Compression.dll
 Function=BrotliEncoderCompress
 	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=sqlite3_close
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_close_v2
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_enable_shared_cache
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_interrupt
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_finalize
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_reset
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_clear_bindings
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_stmt_status
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_parameter_name
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_database_name
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_decltype
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_name
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_origin_name
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_table_name
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_text
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_errmsg
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_db_readonly
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_db_filename
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_prepare_v2
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_prepare_v3
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_db_status
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_complete
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_compileoption_used
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_compileoption_get
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_table_column_metadata
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_value_text
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_enable_load_extension
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_load_extension
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_initialize
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_shutdown
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_libversion
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_libversion_number
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_threadsafe
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_sourceid
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_malloc
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_realloc
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_free
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_stricmp
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_strnicmp
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_open
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_open_v2
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_vfs_find
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_last_insert_rowid
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_changes
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_total_changes
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_memory_used
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_memory_highwater
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_status
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_busy_timeout
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_blob
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_zeroblob
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_double
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_int
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_int64
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_null
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_text
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_parameter_count
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_parameter_index
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_count
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_data_count
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_step
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_sql
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_double
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_int
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_int64
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_blob
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_bytes
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_type
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_aggregate_count
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_value_blob
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_value_bytes
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_value_double
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_value_int
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_value_int64
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_value_type
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_user_data
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_blob
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_double
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_error
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_int
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_int64
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_null
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_text
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_zeroblob
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_error_toobig
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_error_nomem
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_error_code
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_aggregate_context
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_key
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_key_v2
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_rekey
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_rekey_v2
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_config
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_create_collation
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_update_hook
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_commit_hook
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_profile
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_progress_handler
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_trace
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_rollback_hook
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_db_handle
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_next_stmt
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_stmt_isexplain
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_stmt_busy
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_stmt_readonly
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_exec
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_get_autocommit
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_extended_result_codes
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_errcode
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_extended_errcode
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_errstr
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_log
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_file_control
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_backup_init
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_backup_step
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_backup_remaining
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_backup_pagecount
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_backup_finish
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_blob_open
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_blob_write
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_blob_read
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_blob_bytes
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_blob_reopen
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_blob_close
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_wal_autocheckpoint
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_wal_checkpoint
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_wal_checkpoint_v2
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_set_authorizer
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_create_function_v2
+	/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/mtouch-cache/1-Link/SQLitePCLRaw.provider.internal.dll
 Function=mono_pmip
 Function=xamarin_dyn_objc_msgSend
 Function=xamarin_dyn_objc_msgSendSuper

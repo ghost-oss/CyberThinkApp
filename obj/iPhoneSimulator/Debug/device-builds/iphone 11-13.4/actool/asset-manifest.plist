@@ -6,7 +6,7 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/bundle/Assets.car</string>
+			<string>/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/bundle/Assets.car</string>
 		</array>
 	</dict>
 	<key>com.apple.actool.document.warnings</key>
@@ -17,19 +17,7 @@
 				<string>./emptynotes.imageset/(null)[2d][emptynotes.jpg]</string>
 			</array>
 			<key>catalog</key>
-			<string>/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/cloned-assets/Resources/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "emptynotes" has an unassigned child.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./emptynotes.imageset/(null)[2d][emptynotes.jpg]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/cloned-assets/Resources/Assets.xcassets</string>
+			<string>/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/cloned-assets/Resources/Assets.xcassets</string>
 			<key>message</key>
 			<string>The image set "emptynotes" has an unassigned child.</string>
 			<key>type</key>
@@ -48,9 +36,21 @@
 				<string>./AppIcon.appiconset/(null)[2d][Screenshot 2021-02-14 at 19.16.06.png]</string>
 			</array>
 			<key>catalog</key>
-			<string>/Users/System1/Projects/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/cloned-assets/Resources/Assets.xcassets</string>
+			<string>/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/cloned-assets/Resources/Assets.xcassets</string>
 			<key>message</key>
 			<string>The app icon set "AppIcon" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./emptynotes.imageset/(null)[2d][emptynotes.jpg]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/cloned-assets/Resources/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "emptynotes" has an unassigned child.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
@@ -59,7 +59,7 @@
 	<array>
 		<dict>
 			<key>description</key>
-			<string>Failed to read file attributes for "/Users/System1/Projects/CyberThink /CyberThink/11"</string>
+			<string>Failed to read file attributes for "/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/11"</string>
 			<key>failure-reason</key>
 			<string>No such file or directory</string>
 		</dict>

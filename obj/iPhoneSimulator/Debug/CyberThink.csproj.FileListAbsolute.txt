@@ -94,7 +94,6 @@
 /Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/coremlc/_PartialAppManifest.items
 /Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/coremlc/_BundleResourceWithLogicalName.items
 /Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/optimized/
-/Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/CyberThink.csprojAssemblyReference.cache
 /Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/CyberThink.csproj.CoreCompileInputs.cache
 /Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/CyberThink.csproj.CopyComplete
 /Users/System1/Desktop/CyberThinkV2/CyberThink /CyberThink/obj/iPhoneSimulator/Debug/CyberThink.exe
