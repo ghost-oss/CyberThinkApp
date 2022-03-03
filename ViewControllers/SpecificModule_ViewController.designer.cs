@@ -22,6 +22,9 @@ namespace CyberThink
 		UIKit.NSLayoutConstraint moduleInformationHeightConstraint { get; set; }
 
 		[Outlet]
+		UIKit.NSLayoutConstraint moduleInformationLeftHeightConstraint { get; set; }
+
+		[Outlet]
 		UIKit.NSLayoutConstraint moduleInformationTopConstraint { get; set; }
 
 		[Outlet]
@@ -53,6 +56,11 @@ namespace CyberThink
 				moduleInformationHeightConstraint = null;
 			}
 
+			if (moduleInformationTopConstraint != null) {
+				moduleInformationTopConstraint.Dispose ();
+				moduleInformationTopConstraint = null;
+			}
+
 			if (moduleTitle != null) {
 				moduleTitle.Dispose ();
 				moduleTitle = null;
@@ -73,9 +81,9 @@ namespace CyberThink
 				viewForScrollHeightConstraint = null;
 			}
 
-			if (moduleInformationTopConstraint != null) {
-				moduleInformationTopConstraint.Dispose ();
-				moduleInformationTopConstraint = null;
+			if (moduleInformationLeftHeightConstraint != null) {
+				moduleInformationLeftHeightConstraint.Dispose ();
+				moduleInformationLeftHeightConstraint = null;
 			}
 		}
 	}

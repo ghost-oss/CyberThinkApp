@@ -168,6 +168,8 @@
                     <connections>
                         <outlet property="ButtonsBackground" destination="Mba-kT-9iY" id="N77-7d-vv4"/>
                         <outlet property="ProgressContainerView" destination="6Sb-TD-Omx" id="b4J-HO-Bkc"/>
+                        <outlet property="buttonsViewLeftConstraint" destination="b5Q-cb-UZR" id="Bam-yy-0nd"/>
+                        <outlet property="buttonsViewRightConstraint" destination="PCT-oB-tE5" id="C2c-wp-dgi"/>
                         <outlet property="innerViewForScroll" destination="jdm-he-b5u" id="CX8-U9-UYI"/>
                         <outlet property="passwordProgressTitle" destination="Dh3-Q5-aHh" id="8OK-V1-UL7"/>
                         <outlet property="passwordProgressView" destination="r7M-Ge-K8A" id="hfk-T8-ehe"/>
@@ -176,6 +178,8 @@
                         <outlet property="physicalProgressTitle" destination="vbp-ZO-1yU" id="42a-j5-nIU"/>
                         <outlet property="physicalProgressView" destination="hem-au-oac" id="kyA-49-IDf"/>
                         <outlet property="progressContainerView" destination="6Sb-TD-Omx" id="2Z1-Bs-aTK"/>
+                        <outlet property="progressViewLeftConstraint" destination="8rG-GU-rus" id="agw-QY-6YB"/>
+                        <outlet property="progressViewRightConstraint" destination="XTL-dk-dC1" id="NFx-Wv-6ae"/>
                         <outlet property="quizButton" destination="StS-Fs-yKg" id="IEv-9l-G8Z"/>
                         <outlet property="revisionButton" destination="g5h-Yo-0MU" id="nQW-PR-t58"/>
                     </connections>
@@ -226,9 +230,6 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPY-Yi-oEV">
                                                 <rect key="frame" x="31" y="111" width="352" height="20.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="352" id="JPO-S3-FjF"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -275,6 +276,7 @@
                     <connections>
                         <outlet property="innerScrollView" destination="grn-k2-iU3" id="ChU-qj-RFT"/>
                         <outlet property="innerScrollViewHeightConstraint" destination="TkU-Xr-akW" id="O7l-PD-AfI"/>
+                        <outlet property="specifcNoteLeftConstraint" destination="1sW-TK-Edp" id="XUa-5X-RPA"/>
                         <outlet property="specifcNoteTitle" destination="6vb-ck-cYI" id="evR-YZ-V9L"/>
                         <outlet property="specificNoteInformation" destination="wPY-Yi-oEV" id="tLD-QO-Ehe"/>
                     </connections>
@@ -933,6 +935,7 @@
                         <outlet property="backgroundView" destination="19l-aa-DQs" id="6de-h1-gAo"/>
                         <outlet property="moduleInformation" destination="OSW-FP-WSw" id="29R-Vp-eio"/>
                         <outlet property="moduleInformationHeightConstraint" destination="gSI-my-be1" id="ebn-Cd-eXu"/>
+                        <outlet property="moduleInformationLeftHeightConstraint" destination="lRD-Rx-FZs" id="bum-oN-gLK"/>
                         <outlet property="moduleInformationTopConstraint" destination="3g2-Nm-95E" id="EaO-S3-A0x"/>
                         <outlet property="moduleTitle" destination="N95-wv-PN9" id="KMG-Ap-l85"/>
                         <outlet property="specificImageHeight" destination="DoY-72-hN1" id="tG3-TQ-JxO"/>

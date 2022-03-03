@@ -19,6 +19,12 @@ namespace CyberThink
 		UIKit.NSLayoutConstraint buttonsBackgroundHeightConstraint { get; set; }
 
 		[Outlet]
+		UIKit.NSLayoutConstraint buttonsViewLeftConstraint { get; set; }
+
+		[Outlet]
+		UIKit.NSLayoutConstraint buttonsViewRightConstraint { get; set; }
+
+		[Outlet]
 		UIKit.UIImageView cyberThinksLogo { get; set; }
 
 		[Outlet]
@@ -52,6 +58,12 @@ namespace CyberThink
 		UIKit.UIView progressContainerView { get; set; }
 
 		[Outlet]
+		UIKit.NSLayoutConstraint progressViewLeftConstraint { get; set; }
+
+		[Outlet]
+		UIKit.NSLayoutConstraint progressViewRightConstraint { get; set; }
+
+		[Outlet]
 		UIKit.UIButton quizButton { get; set; }
 
 		[Outlet]
@@ -81,6 +93,21 @@ namespace CyberThink
 			if (cyberThinksLogo != null) {
 				cyberThinksLogo.Dispose ();
 				cyberThinksLogo = null;
+			}
+
+			if (homePageBackground != null) {
+				homePageBackground.Dispose ();
+				homePageBackground = null;
+			}
+
+			if (innerViewForScroll != null) {
+				innerViewForScroll.Dispose ();
+				innerViewForScroll = null;
+			}
+
+			if (ModuleCompletionBackground != null) {
+				ModuleCompletionBackground.Dispose ();
+				ModuleCompletionBackground = null;
 			}
 
 			if (passwordProgressTitle != null) {
@@ -113,21 +140,6 @@ namespace CyberThink
 				physicalProgressView = null;
 			}
 
-			if (homePageBackground != null) {
-				homePageBackground.Dispose ();
-				homePageBackground = null;
-			}
-
-			if (innerViewForScroll != null) {
-				innerViewForScroll.Dispose ();
-				innerViewForScroll = null;
-			}
-
-			if (ModuleCompletionBackground != null) {
-				ModuleCompletionBackground.Dispose ();
-				ModuleCompletionBackground = null;
-			}
-
 			if (progressContainerView != null) {
 				progressContainerView.Dispose ();
 				progressContainerView = null;
@@ -156,6 +168,26 @@ namespace CyberThink
 			if (tableView != null) {
 				tableView.Dispose ();
 				tableView = null;
+			}
+
+			if (progressViewLeftConstraint != null) {
+				progressViewLeftConstraint.Dispose ();
+				progressViewLeftConstraint = null;
+			}
+
+			if (progressViewRightConstraint != null) {
+				progressViewRightConstraint.Dispose ();
+				progressViewRightConstraint = null;
+			}
+
+			if (buttonsViewLeftConstraint != null) {
+				buttonsViewLeftConstraint.Dispose ();
+				buttonsViewLeftConstraint = null;
+			}
+
+			if (buttonsViewRightConstraint != null) {
+				buttonsViewRightConstraint.Dispose ();
+				buttonsViewRightConstraint = null;
 			}
 		}
 	}

@@ -21,8 +21,9 @@ namespace CyberThink
 		}
 
         private Home_ViewModel home_ViewModel;
+        private bool isLandscape => UIApplication.SharedApplication.StatusBarOrientation == UIInterfaceOrientation.LandscapeLeft || UIApplication.SharedApplication.StatusBarOrientation == UIInterfaceOrientation.LandscapeRight;
 
-       
+
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
@@ -49,6 +50,7 @@ namespace CyberThink
         {
             base.ViewWillAppear(animated);
             this.SetUpButtonUI();
+            this.AdjustConstraintsForLandscape();
             passwordProgressView.Transform = CGAffineTransform.MakeScale(1, 5);
             phishingProgressView.Transform = CGAffineTransform.MakeScale(1, 5);
             physicalProgressView.Transform = CGAffineTransform.MakeScale(1, 5);
@@ -196,22 +198,33 @@ namespace CyberThink
             this.NavigationController.PushViewController(vc, true);
         }
 
+        public override void ViewWillTransitionToSize(CGSize toSize, IUIViewControllerTransitionCoordinator coordinator)
+        {
+            this.AdjustConstraintsForLandscape();
+        }
+
+
+        public void AdjustConstraintsForLandscape()
+        {
+            if (isLandscape)
+            {
+                progressViewLeftConstraint.Constant = 30;
+                progressViewRightConstraint.Constant = 30;
+
+                buttonsViewLeftConstraint.Constant = 35;
+                buttonsViewRightConstraint.Constant = 35;
+            }
+            else
+            {
+                progressViewLeftConstraint.Constant = 20;
+                progressViewRightConstraint.Constant = 20;
+
+                buttonsViewLeftConstraint.Constant = 25;
+                buttonsViewRightConstraint.Constant = 25;
+            }
+        }
+
     }
 
 
 }
-
-
-
-//var storyBoard = UIStoryboard.FromName("Main",null);
-//var vc = storyBoard?.InstantiateViewController("Modules_ViewController");
-//vc.HidesBottomBarWhenPushed = false;
-//this.NavigationController?.PushViewController(vc,true);
-
-
-
-
-
-//Set this back up once you insert the table view with the outlet 'tableView'
-//tableView.Delegate = this;
-//tableView.DataSource = this;
