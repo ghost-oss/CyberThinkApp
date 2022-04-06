@@ -27,8 +27,6 @@ namespace CyberThink.Service
 
                 list = await BlobCache.LocalMachine.GetObject<List<Module>>(moduleType);
 
-                list.Clear(); //Remove once testing for ModuleRepository is complete to allow testing
-
                 if (list == null || list.Count == 0)
                 {
                     ModuleRepository moduleRepository = new ModuleRepository();
@@ -106,13 +104,6 @@ namespace CyberThink.Service
 
 
         #endregion
-
-
-        //This will be generic type to which can clear cache of any kind
-        public void ClearCache()
-        {
-
-        }
 
     }
 
