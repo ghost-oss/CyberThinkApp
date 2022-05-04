@@ -1,8 +1,3 @@
-﻿/*
- * FB connection - sahildeveloper6@gmail.com / CApricorn5! 
- * 
- * 
- */
 using System;
 using CyberThink.Model;
 using System.Collections.Generic;
